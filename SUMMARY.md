@@ -1,0 +1,36 @@
+# [psalm 英文文档](https://github.com/vimeo/psalm)
+
+- Annotating Code
+  - Type Syntax
+    * [Array Types](annotating_code/type_syntax/array_types.md)
+    * [Atomic Types](annotating_code/type_syntax/atomic_types.md)
+    * [Callable Types](annotating_code/type_syntax/callable_types.md)
+    * [Conditional Types](annotating_code/type_syntax/conditional_types.md)
+    * [Intersection Types](annotating_code/type_syntax/intersection_types.md)
+    * [Object Types](annotating_code/type_syntax/object_types.md)
+    * [Scalar Types](annotating_code/type_syntax/scalar_types.md)
+    * [Union Types](annotating_code/type_syntax/union_types.md)
+    * [Value Types](annotating_code/type_syntax/value_types.md)
+  * [Adding Assertions](annotating_code/adding_assertions.md)
+  * [Assertion Syntax](annotating_code/assertion_syntax.md)
+  * [Supported Annotations](annotating_code/supported_annotations.md)
+  * [Templated Annotations](annotating_code/templated_annotations.md)
+  * [Typing In Psalm](annotating_code/typing_in_psalm.md)
+- Manipulating Code
+  * [Fixing](manipulating_code/fixing.md)
+  * [Refactoring](manipulating_code/refactoring.md)
+- Running Psalm
+  * [Issues](running_psalm/issues.md)
+  - Plugins
+    * [Authoring Plugins](running_psalm/plugins/authoring_plugins.md)
+    * [Plugins Type System](running_psalm/plugins/plugins_type_system.md)
+    * [Using Plugins](running_psalm/plugins/using_plugins.md)
+  * [Checking Non Php Files](running_psalm/checking_non_php_files.md)
+  * [Command Line Usage](running_psalm/command_line_usage.md)
+  * [Configuration](running_psalm/configuration.md)
+  * [Dealing With Code Issues](running_psalm/dealing_with_code_issues.md)
+  * [Error Levels](running_psalm/error_levels.md)
+  * [Installation](running_psalm/installation.md)
+  * [Language Server](running_psalm/language_server.md)
+* [How Psalm Works](how_psalm_works.md)
+* [What Makes Psalm Complicated](what_makes_psalm_complicated.md)
