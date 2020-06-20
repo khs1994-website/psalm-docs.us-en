@@ -32,5 +32,10 @@
   * [Error Levels](running_psalm/error_levels.md)
   * [Installation](running_psalm/installation.md)
   * [Language Server](running_psalm/language_server.md)
+- Security Analysis
+  * [Avoiding False Positives](security_analysis/avoiding_false_positives.md)
+  * [Custom Taint Sinks](security_analysis/custom_taint_sinks.md)
+  * [Custom Taint Sources](security_analysis/custom_taint_sources.md)
+  * [Index](security_analysis/index.md)
 * [How Psalm Works](how_psalm_works.md)
 * [What Makes Psalm Complicated](what_makes_psalm_complicated.md)
