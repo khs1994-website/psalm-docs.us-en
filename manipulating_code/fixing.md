@@ -222,15 +222,16 @@ class C {
 C::foo("hello");
 ```
 
-### MissingParamType
+### MissingPropertyType
 
-Running `vendor/bin/psalter --issues=MissingParamType` on
+Running `vendor/bin/psalter --issues=MissingPropertyType` on
+
 ```php
 <?php
 class A {
     public $foo;
     public $bar;
-    
+
     public function __construct()
     {
         if (rand(0, 1)) {
@@ -238,7 +239,7 @@ class A {
         } else {
             $this->foo = "hello";
         }
-        
+
         $this->bar = "baz";
     }
 }
@@ -255,7 +256,7 @@ class A {
     public $foo;
 
     public string $bar;
-    
+
     public function __construct()
     {
         if (rand(0, 1)) {
@@ -263,7 +264,7 @@ class A {
         } else {
             $this->foo = "hello";
         }
-        
+
         $this->bar = "baz";
     }
 }
