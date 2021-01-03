@@ -16,6 +16,10 @@
   * [Supported Annotations](annotating_code/supported_annotations.md)
   * [Templated Annotations](annotating_code/templated_annotations.md)
   * [Typing In Psalm](annotating_code/typing_in_psalm.md)
+- Contributing
+  * [How Psalm Works](contributing/how_psalm_works.md)
+  * [Index](contributing/index.md)
+  * [What Makes Psalm Complicated](contributing/what_makes_psalm_complicated.md)
 - Manipulating Code
   * [Fixing](manipulating_code/fixing.md)
   * [Refactoring](manipulating_code/refactoring.md)
@@ -38,5 +42,3 @@
   * [Custom Taint Sinks](security_analysis/custom_taint_sinks.md)
   * [Custom Taint Sources](security_analysis/custom_taint_sources.md)
   * [Index](security_analysis/index.md)
-* [How Psalm Works](how_psalm_works.md)
-* [What Makes Psalm Complicated](what_makes_psalm_complicated.md)
