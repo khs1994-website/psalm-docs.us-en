@@ -38,6 +38,7 @@
   * [Language Server](running_psalm/language_server.md)
 - Security Analysis
   * [Annotations](security_analysis/annotations.md)
+  * [Avoiding False Negatives](security_analysis/avoiding_false_negatives.md)
   * [Avoiding False Positives](security_analysis/avoiding_false_positives.md)
   * [Custom Taint Sinks](security_analysis/custom_taint_sinks.md)
   * [Custom Taint Sources](security_analysis/custom_taint_sources.md)
