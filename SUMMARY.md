@@ -19,6 +19,7 @@
 - Contributing
   * [How Psalm Works](contributing/how_psalm_works.md)
   * [Index](contributing/index.md)
+  * [Philosophy](contributing/philosophy.md)
   * [What Makes Psalm Complicated](contributing/what_makes_psalm_complicated.md)
 - Manipulating Code
   * [Fixing](manipulating_code/fixing.md)
