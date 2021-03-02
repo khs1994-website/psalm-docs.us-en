@@ -1,0 +1,911 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Custom Taint Sources · psalm 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="./" />
+    
+    
+    <link rel="prev" href="custom_taint_sinks.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Annotating Code
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    Type Syntax
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../annotating_code/type_syntax/array_types.html">
+            
+                <a href="../annotating_code/type_syntax/array_types.html">
+            
+                    
+                    Array Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../annotating_code/type_syntax/atomic_types.html">
+            
+                <a href="../annotating_code/type_syntax/atomic_types.html">
+            
+                    
+                    Atomic Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../annotating_code/type_syntax/callable_types.html">
+            
+                <a href="../annotating_code/type_syntax/callable_types.html">
+            
+                    
+                    Callable Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../annotating_code/type_syntax/conditional_types.html">
+            
+                <a href="../annotating_code/type_syntax/conditional_types.html">
+            
+                    
+                    Conditional Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../annotating_code/type_syntax/intersection_types.html">
+            
+                <a href="../annotating_code/type_syntax/intersection_types.html">
+            
+                    
+                    Intersection Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../annotating_code/type_syntax/object_types.html">
+            
+                <a href="../annotating_code/type_syntax/object_types.html">
+            
+                    
+                    Object Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="../annotating_code/type_syntax/scalar_types.html">
+            
+                <a href="../annotating_code/type_syntax/scalar_types.html">
+            
+                    
+                    Scalar Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="../annotating_code/type_syntax/union_types.html">
+            
+                <a href="../annotating_code/type_syntax/union_types.html">
+            
+                    
+                    Union Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="../annotating_code/type_syntax/value_types.html">
+            
+                <a href="../annotating_code/type_syntax/value_types.html">
+            
+                    
+                    Value Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../annotating_code/adding_assertions.html">
+            
+                <a href="../annotating_code/adding_assertions.html">
+            
+                    
+                    Adding Assertions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../annotating_code/assertion_syntax.html">
+            
+                <a href="../annotating_code/assertion_syntax.html">
+            
+                    
+                    Assertion Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../annotating_code/supported_annotations.html">
+            
+                <a href="../annotating_code/supported_annotations.html">
+            
+                    
+                    Supported Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../annotating_code/templated_annotations.html">
+            
+                <a href="../annotating_code/templated_annotations.html">
+            
+                    
+                    Templated Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../annotating_code/typing_in_psalm.html">
+            
+                <a href="../annotating_code/typing_in_psalm.html">
+            
+                    
+                    Typing In Psalm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Contributing
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../contributing/how_psalm_works.html">
+            
+                <a href="../contributing/how_psalm_works.html">
+            
+                    
+                    How Psalm Works
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../contributing/">
+            
+                <a href="../contributing/">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../contributing/philosophy.html">
+            
+                <a href="../contributing/philosophy.html">
+            
+                    
+                    Philosophy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../contributing/what_makes_psalm_complicated.html">
+            
+                <a href="../contributing/what_makes_psalm_complicated.html">
+            
+                    
+                    What Makes Psalm Complicated
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Manipulating Code
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../manipulating_code/fixing.html">
+            
+                <a href="../manipulating_code/fixing.html">
+            
+                    
+                    Fixing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../manipulating_code/refactoring.html">
+            
+                <a href="../manipulating_code/refactoring.html">
+            
+                    
+                    Refactoring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Running Psalm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../running_psalm/issues.html">
+            
+                <a href="../running_psalm/issues.html">
+            
+                    
+                    Issues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    Plugins
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../running_psalm/plugins/authoring_plugins.html">
+            
+                <a href="../running_psalm/plugins/authoring_plugins.html">
+            
+                    
+                    Authoring Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../running_psalm/plugins/plugins_type_system.html">
+            
+                <a href="../running_psalm/plugins/plugins_type_system.html">
+            
+                    
+                    Plugins Type System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../running_psalm/plugins/using_plugins.html">
+            
+                <a href="../running_psalm/plugins/using_plugins.html">
+            
+                    
+                    Using Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../running_psalm/checking_non_php_files.html">
+            
+                <a href="../running_psalm/checking_non_php_files.html">
+            
+                    
+                    Checking Non Php Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../running_psalm/command_line_usage.html">
+            
+                <a href="../running_psalm/command_line_usage.html">
+            
+                    
+                    Command Line Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../running_psalm/configuration.html">
+            
+                <a href="../running_psalm/configuration.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../running_psalm/dealing_with_code_issues.html">
+            
+                <a href="../running_psalm/dealing_with_code_issues.html">
+            
+                    
+                    Dealing With Code Issues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../running_psalm/error_levels.html">
+            
+                <a href="../running_psalm/error_levels.html">
+            
+                    
+                    Error Levels
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../running_psalm/installation.html">
+            
+                <a href="../running_psalm/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../running_psalm/language_server.html">
+            
+                <a href="../running_psalm/language_server.html">
+            
+                    
+                    Language Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Security Analysis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="annotations.html">
+            
+                <a href="annotations.html">
+            
+                    
+                    Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="avoiding_false_negatives.html">
+            
+                <a href="avoiding_false_negatives.html">
+            
+                    
+                    Avoiding False Negatives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="avoiding_false_positives.html">
+            
+                <a href="avoiding_false_positives.html">
+            
+                    
+                    Avoiding False Positives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="custom_taint_sinks.html">
+            
+                <a href="custom_taint_sinks.html">
+            
+                    
+                    Custom Taint Sinks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.5" data-path="custom_taint_sources.html">
+            
+                <a href="custom_taint_sources.html">
+            
+                    
+                    Custom Taint Sources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Custom Taint Sources</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="custom-taint-sources">Custom Taint Sources</h1>
+<p>You can define your own taint sources with an annotation or a plugin.</p>
+<h2 id="taint-source-annotation">Taint source annotation</h2>
+<p>You can use the annotation <code>@psalm-taint-source <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>taint-type</span><span class="token punctuation">&gt;</span></span></code> to indicate a function or method that provides user input.</p>
+<p>In the below example the <code>input</code> taint type is specified as a standin for input taints as defined in <a href="https://github.com/vimeo/psalm/blob/master/src/Psalm/Type/TaintKindGroup.php" target="_blank">Psalm\Type\TaintKindGroup</a>.</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">/**
+ * @psalm-taint-source input
+ */</span>
+<span class="token keyword">function</span> <span class="token function">getQueryParam</span><span class="token punctuation">(</span>string <span class="token variable">$name</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> string <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre>
+<h2 id="custom-taint-plugin">Custom taint plugin</h2>
+<p>For example this plugin treats all variables named <code>$bad_data</code> as taint sources.</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">Some<span class="token punctuation">\</span>Ns</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">PhpParser</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Psalm<span class="token punctuation">\</span>CodeLocation</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Psalm<span class="token punctuation">\</span>Context</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Psalm<span class="token punctuation">\</span>FileManipulation</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Psalm<span class="token punctuation">\</span>Plugin<span class="token punctuation">\</span>EventHandler<span class="token punctuation">\</span>AfterExpressionAnalysisInterface</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Psalm<span class="token punctuation">\</span>Plugin<span class="token punctuation">\</span>EventHandler<span class="token punctuation">\</span>Event<span class="token punctuation">\</span>AfterExpressionAnalysisEvent</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Psalm<span class="token punctuation">\</span>Type<span class="token punctuation">\</span>TaintKindGroup</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">BadSqlTainter</span> <span class="token keyword">implements</span> <span class="token class-name">AfterExpressionAnalysisInterface</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * Called after an expression has been checked
+     *
+     * @param  PhpParser\Node\Expr  $expr
+     * @param  Context              $context
+     * @param  FileManipulation[]   $file_replacements
+     *
+     * @return void
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function">afterExpressionAnalysis</span><span class="token punctuation">(</span>AfterExpressionAnalysisEvent <span class="token variable">$event</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token operator">?</span>bool <span class="token punctuation">{</span>
+        <span class="token variable">$expr</span> <span class="token operator">=</span> <span class="token variable">$event</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getExpr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$statements_source</span> <span class="token operator">=</span> <span class="token variable">$event</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getStatementsSource</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$codebase</span> <span class="token operator">=</span> <span class="token variable">$event</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getCodebase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$expr</span> <span class="token keyword">instanceof</span> <span class="token class-name">PhpParser<span class="token punctuation">\</span>Node<span class="token punctuation">\</span>Expr<span class="token punctuation">\</span>Variable</span>
+            <span class="token operator">&amp;&amp;</span> <span class="token variable">$expr</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">name</span> <span class="token operator">===</span> <span class="token single-quoted-string string">&apos;bad_data&apos;</span>
+        <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token variable">$expr_type</span> <span class="token operator">=</span> <span class="token variable">$statements_source</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getNodeTypeProvider</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getType</span><span class="token punctuation">(</span><span class="token variable">$expr</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// should be a globally unique id</span>
+            <span class="token comment">// you can use its line number/start offset</span>
+            <span class="token variable">$expr_identifier</span> <span class="token operator">=</span> <span class="token single-quoted-string string">&apos;$bad_data&apos;</span>
+                <span class="token punctuation">.</span> <span class="token single-quoted-string string">&apos;-&apos;</span> <span class="token punctuation">.</span> <span class="token variable">$statements_source</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getFileName</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span> <span class="token single-quoted-string string">&apos;:&apos;</span> <span class="token punctuation">.</span> <span class="token variable">$expr</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getAttribute</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;startFilePos&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$expr_type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token variable">$codebase</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">addTaintSource</span><span class="token punctuation">(</span>
+                    <span class="token variable">$expr_type</span><span class="token punctuation">,</span>
+                    <span class="token variable">$expr_identifier</span><span class="token punctuation">,</span>
+                    TaintKindGroup<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token constant">ALL_INPUT</span><span class="token punctuation">,</span>
+                    <span class="token keyword">new</span> <span class="token class-name">CodeLocation</span><span class="token punctuation">(</span><span class="token variable">$statements_source</span><span class="token punctuation">,</span> <span class="token variable">$expr</span><span class="token punctuation">)</span>
+                <span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="custom_taint_sinks.html" class="navigation navigation-prev " aria-label="Previous page: Custom Taint Sinks">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="./" class="navigation navigation-next " aria-label="Next page: Index">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Custom Taint Sources","level":"1.6.5","depth":2,"next":{"title":"Index","level":"1.6.6","depth":2,"path":"security_analysis/index.md","ref":"security_analysis/index.md","articles":[]},"previous":{"title":"Custom Taint Sinks","level":"1.6.4","depth":2,"path":"security_analysis/custom_taint_sinks.md","ref":"security_analysis/custom_taint_sinks.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"psalm 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"security_analysis/custom_taint_sources.md","mtime":"2021-03-02T00:11:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-02T00:11:59.346Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

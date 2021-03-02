@@ -1,0 +1,1236 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Templated Annotations · psalm 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="typing_in_psalm.html" />
+    
+    
+    <link rel="prev" href="supported_annotations.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Annotating Code
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    Type Syntax
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="type_syntax/array_types.html">
+            
+                <a href="type_syntax/array_types.html">
+            
+                    
+                    Array Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="type_syntax/atomic_types.html">
+            
+                <a href="type_syntax/atomic_types.html">
+            
+                    
+                    Atomic Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="type_syntax/callable_types.html">
+            
+                <a href="type_syntax/callable_types.html">
+            
+                    
+                    Callable Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="type_syntax/conditional_types.html">
+            
+                <a href="type_syntax/conditional_types.html">
+            
+                    
+                    Conditional Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="type_syntax/intersection_types.html">
+            
+                <a href="type_syntax/intersection_types.html">
+            
+                    
+                    Intersection Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="type_syntax/object_types.html">
+            
+                <a href="type_syntax/object_types.html">
+            
+                    
+                    Object Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="type_syntax/scalar_types.html">
+            
+                <a href="type_syntax/scalar_types.html">
+            
+                    
+                    Scalar Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="type_syntax/union_types.html">
+            
+                <a href="type_syntax/union_types.html">
+            
+                    
+                    Union Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="type_syntax/value_types.html">
+            
+                <a href="type_syntax/value_types.html">
+            
+                    
+                    Value Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="adding_assertions.html">
+            
+                <a href="adding_assertions.html">
+            
+                    
+                    Adding Assertions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="assertion_syntax.html">
+            
+                <a href="assertion_syntax.html">
+            
+                    
+                    Assertion Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="supported_annotations.html">
+            
+                <a href="supported_annotations.html">
+            
+                    
+                    Supported Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="templated_annotations.html">
+            
+                <a href="templated_annotations.html">
+            
+                    
+                    Templated Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="typing_in_psalm.html">
+            
+                <a href="typing_in_psalm.html">
+            
+                    
+                    Typing In Psalm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Contributing
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../contributing/how_psalm_works.html">
+            
+                <a href="../contributing/how_psalm_works.html">
+            
+                    
+                    How Psalm Works
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../contributing/">
+            
+                <a href="../contributing/">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../contributing/philosophy.html">
+            
+                <a href="../contributing/philosophy.html">
+            
+                    
+                    Philosophy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../contributing/what_makes_psalm_complicated.html">
+            
+                <a href="../contributing/what_makes_psalm_complicated.html">
+            
+                    
+                    What Makes Psalm Complicated
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Manipulating Code
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../manipulating_code/fixing.html">
+            
+                <a href="../manipulating_code/fixing.html">
+            
+                    
+                    Fixing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../manipulating_code/refactoring.html">
+            
+                <a href="../manipulating_code/refactoring.html">
+            
+                    
+                    Refactoring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Running Psalm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../running_psalm/issues.html">
+            
+                <a href="../running_psalm/issues.html">
+            
+                    
+                    Issues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    Plugins
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../running_psalm/plugins/authoring_plugins.html">
+            
+                <a href="../running_psalm/plugins/authoring_plugins.html">
+            
+                    
+                    Authoring Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../running_psalm/plugins/plugins_type_system.html">
+            
+                <a href="../running_psalm/plugins/plugins_type_system.html">
+            
+                    
+                    Plugins Type System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../running_psalm/plugins/using_plugins.html">
+            
+                <a href="../running_psalm/plugins/using_plugins.html">
+            
+                    
+                    Using Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../running_psalm/checking_non_php_files.html">
+            
+                <a href="../running_psalm/checking_non_php_files.html">
+            
+                    
+                    Checking Non Php Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../running_psalm/command_line_usage.html">
+            
+                <a href="../running_psalm/command_line_usage.html">
+            
+                    
+                    Command Line Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../running_psalm/configuration.html">
+            
+                <a href="../running_psalm/configuration.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../running_psalm/dealing_with_code_issues.html">
+            
+                <a href="../running_psalm/dealing_with_code_issues.html">
+            
+                    
+                    Dealing With Code Issues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../running_psalm/error_levels.html">
+            
+                <a href="../running_psalm/error_levels.html">
+            
+                    
+                    Error Levels
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../running_psalm/installation.html">
+            
+                <a href="../running_psalm/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../running_psalm/language_server.html">
+            
+                <a href="../running_psalm/language_server.html">
+            
+                    
+                    Language Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Security Analysis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../security_analysis/annotations.html">
+            
+                <a href="../security_analysis/annotations.html">
+            
+                    
+                    Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../security_analysis/avoiding_false_negatives.html">
+            
+                <a href="../security_analysis/avoiding_false_negatives.html">
+            
+                    
+                    Avoiding False Negatives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../security_analysis/avoiding_false_positives.html">
+            
+                <a href="../security_analysis/avoiding_false_positives.html">
+            
+                    
+                    Avoiding False Positives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../security_analysis/custom_taint_sinks.html">
+            
+                <a href="../security_analysis/custom_taint_sinks.html">
+            
+                    
+                    Custom Taint Sinks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../security_analysis/custom_taint_sources.html">
+            
+                <a href="../security_analysis/custom_taint_sources.html">
+            
+                    
+                    Custom Taint Sources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../security_analysis/">
+            
+                <a href="../security_analysis/">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Templated Annotations</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="templating">Templating</h1>
+<p>Docblocks allow you to tell Psalm some simple information about how your code works. For example <code>@return int</code> in a function return type tells Psalm that a function should return an <code>int</code> and <code>@return MyContainer</code> tells Psalm that a function should return an instance of a user-defined class <code>MyContainer</code>. In either case, Psalm can check that the function actually returns those types <em>and</em> that anything calling that function uses its returned value properly.</p>
+<p>Templated types allow you to tell Psalm even more information about how your code works.</p>
+<p>Let&apos;s look at a simple class <code>MyContainer</code>:</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">class</span> <span class="token class-name">MyContainer</span> <span class="token punctuation">{</span>
+  <span class="token keyword">private</span> <span class="token variable">$value</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__construct</span><span class="token punctuation">(</span><span class="token variable">$value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">value</span> <span class="token operator">=</span> <span class="token variable">$value</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">value</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>When Psalm handles the return type of <code>$my_container-&gt;getValue()</code> it doesn&apos;t know what it&apos;s getting out, because the value can be arbitrary.</p>
+<p>Templated annotations provide us with a workaround - we can define a generic/templated param <code>T</code> that is a placeholder for the value inside <code>MyContainer</code>:</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">/**
+ * @template T
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">MyContainer</span> <span class="token punctuation">{</span>
+  <span class="token comment">/** @var T */</span>
+  <span class="token keyword">private</span> <span class="token variable">$value</span><span class="token punctuation">;</span>
+
+  <span class="token comment">/** @param T $value */</span>
+  <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__construct</span><span class="token punctuation">(</span><span class="token variable">$value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">value</span> <span class="token operator">=</span> <span class="token variable">$value</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/** @return T */</span>
+  <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">value</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Now we can substitute values for that templated param when we reference <code>MyContainer</code> in docblocks e.g. <code>@return MyContainer<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span></code>. This tells Psalm to substitute <code>T</code> for <code>int</code> when evaluating that return type, effectively treating it as a class that looks like</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">class</span> <span class="token class-name">One_off_instance_of_MyContainer</span> <span class="token punctuation">{</span>
+  <span class="token comment">/** @var int */</span>
+  <span class="token keyword">private</span> <span class="token variable">$value</span><span class="token punctuation">;</span>
+
+  <span class="token comment">/** @param int $value */</span>
+  <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__construct</span><span class="token punctuation">(</span><span class="token variable">$value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">value</span> <span class="token operator">=</span> <span class="token variable">$value</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/** @return int */</span>
+  <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">value</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>This pattern can be used in large number of different situations like mocking, collections, iterators and loading arbitrary objects. Psalm has a large number of annotations to make it easy to use templated types in your codebase.</p>
+<h2 id="template-psalm-template"><code>@template</code>, <code>@psalm-template</code></h2>
+<p>The <code>@template</code>/<code>@psalm-template</code> tag allows classes and functions to declare a generic type parameter.</p>
+<p>As a very simple example, this function returns whatever is passed in:</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">/**
+ * @template T
+ * @psalm-param T $t
+ * @return T
+ */</span>
+<span class="token keyword">function</span> <span class="token function">mirror</span><span class="token punctuation">(</span><span class="token variable">$t</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token variable">$t</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token variable">$a</span> <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token variable">$b</span> <span class="token operator">=</span> <span class="token function">mirror</span><span class="token punctuation">(</span><span class="token variable">$a</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Psalm knows the result is an int</span>
+
+<span class="token variable">$c</span> <span class="token operator">=</span> <span class="token double-quoted-string string">&quot;foo&quot;</span><span class="token punctuation">;</span>
+<span class="token variable">$d</span> <span class="token operator">=</span> <span class="token function">mirror</span><span class="token punctuation">(</span><span class="token variable">$c</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Psalm knows the result is string</span>
+</code></pre>
+<p>Psalm also uses <code>@template</code> annotations in its stubbed versions of PHP array functions e.g.</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">/**
+ * Takes one array with keys and another with values and combines them
+ *
+ * @template TKey
+ * @template TValue
+ *
+ * @param array&lt;mixed, TKey&gt; $arr
+ * @param array&lt;mixed, TValue&gt; $arr2
+ * @return array&lt;TKey, TValue&gt;
+ */</span>
+<span class="token keyword">function</span> <span class="token function">array_combine</span><span class="token punctuation">(</span><span class="token keyword">array</span> <span class="token variable">$arr</span><span class="token punctuation">,</span> <span class="token keyword">array</span> <span class="token variable">$arr2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre>
+<h3 id="notes">Notes</h3>
+<ul>
+<li><code>@template</code> tag order matters for class docblocks, as they dictate the order in which those generic parameters are referenced in docblocks.</li>
+<li>The names of your templated types (e.g. <code>TKey</code>, <code>TValue</code> don&apos;t matter outside the scope of the class or function in which they&apos;re declared.</li>
+</ul>
+<h2 id="param-class-stringt">@param class-string&lt;T&gt;</h2>
+<p>Psalm also allows you to parameterize class types</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">/**
+ * @template T of Foo
+ * @psalm-param class-string&lt;T&gt; $class
+ * @return T
+ */</span>
+<span class="token keyword">function</span> <span class="token function">instantiator</span><span class="token punctuation">(</span>string <span class="token variable">$class</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token variable">$class</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Foo</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">function</span> <span class="token function">__construct</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">FooChild</span> <span class="token keyword">extends</span> <span class="token class-name">Foo</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token variable">$r</span> <span class="token operator">=</span> <span class="token function">instantiator</span><span class="token punctuation">(</span>FooChild<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// Psalm knows $r is an object of type FooChild</span>
+</code></pre>
+<h2 id="template-inheritance">Template inheritance</h2>
+<p>Psalm allows you to extend templated classes with <code>@extends</code>/<code>@template-extends</code>:</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">/**
+ * @template T
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">ParentClass</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * @extends ParentClass&lt;int&gt;
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">ChildClass</span> <span class="token keyword">extends</span> <span class="token class-name">ParentClass</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre>
+<p>similarly you can implement interfaces with <code>@implements</code>/<code>@template-implements</code></p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">/**
+ * @template T
+ */</span>
+<span class="token keyword">interface</span> <span class="token class-name">IFoo</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * @implements IFoo&lt;int&gt;
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">Foo</span> <span class="token keyword">implements</span> <span class="token class-name">IFoo</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre>
+<p>and import traits with <code>@use</code>/<code>@template-use</code></p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">/**
+ * @template T
+ */</span>
+<span class="token keyword">trait</span> MyTrait <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Foo</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * @use MyTrait&lt;int&gt;
+     */</span>
+    <span class="token keyword">use</span> <span class="token package">MyTrait</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>You can also extend one templated class with another, e.g.</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">/**
+ * @template T1
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">ParentClass</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * @template T2
+ * @extends ParentClass&lt;T2&gt;
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">ChildClass</span> <span class="token keyword">extends</span> <span class="token class-name">ParentClass</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre>
+<h2 id="template-constraints">Template constraints</h2>
+<p>You can use <code>@template of <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>type</span><span class="token punctuation">&gt;</span></span></code> to restrict input. For example, to restrict to a given class you can use</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">class</span> <span class="token class-name">Foo</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">FooChild</span> <span class="token keyword">extends</span> <span class="token class-name">Foo</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * @template T of Foo
+ * @psalm-param T $t
+ * @return array&lt;int, T&gt;
+ */</span>
+<span class="token keyword">function</span> <span class="token function">makeArray</span><span class="token punctuation">(</span><span class="token variable">$t</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token variable">$t</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token variable">$a</span> <span class="token operator">=</span> <span class="token function">makeArray</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// typed as array&lt;int, Foo&gt;</span>
+<span class="token variable">$b</span> <span class="token operator">=</span> <span class="token function">makeArray</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FooChild</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// typed as array&lt;int, FooChild&gt;</span>
+<span class="token variable">$c</span> <span class="token operator">=</span> <span class="token function">makeArray</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">stdClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// type error</span>
+</code></pre>
+<p>Templated types aren&apos;t limited to key-value pairs, and you can re-use templates across multiple arguments of a template-supporting type:</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">/**
+ * @template T0 as array-key
+ *
+ * @template-implements IteratorAggregate&lt;T0, int&gt;
+ */</span>
+<span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Foo</span> <span class="token keyword">implements</span> <span class="token class-name">IteratorAggregate</span> <span class="token punctuation">{</span>
+  <span class="token comment">/**
+   * @var int
+   */</span>
+  <span class="token keyword">protected</span> <span class="token variable">$rand_min</span><span class="token punctuation">;</span>
+
+  <span class="token comment">/**
+   * @var int
+   */</span>
+  <span class="token keyword">protected</span> <span class="token variable">$rand_max</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__construct</span><span class="token punctuation">(</span>int <span class="token variable">$rand_min</span><span class="token punctuation">,</span> int <span class="token variable">$rand_max</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">rand_min</span> <span class="token operator">=</span> <span class="token variable">$rand_min</span><span class="token punctuation">;</span>
+    <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">rand_max</span> <span class="token operator">=</span> <span class="token variable">$rand_max</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+   * @return Generator&lt;T0, int, mixed, T0&gt;
+   */</span>
+  <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getIterator</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> Generator <span class="token punctuation">{</span>
+    <span class="token variable">$j</span> <span class="token operator">=</span> <span class="token function">random_int</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">rand_min</span><span class="token punctuation">,</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">rand_max</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">rand_min</span><span class="token punctuation">;</span> <span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token variable">$j</span><span class="token punctuation">;</span> <span class="token variable">$i</span> <span class="token operator">+</span><span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">yield</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getFuzzyType</span><span class="token punctuation">(</span><span class="token variable">$i</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$i</span> <span class="token operator">*</span><span class="token operator">*</span> <span class="token variable">$i</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getFuzzyType</span><span class="token punctuation">(</span><span class="token variable">$j</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+   * @return T0
+   */</span>
+  <span class="token keyword">abstract</span> <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function">getFuzzyType</span><span class="token punctuation">(</span>int <span class="token variable">$i</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * @template-extends Foo&lt;int&gt;
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">Bar</span> <span class="token keyword">extends</span> <span class="token class-name">Foo</span> <span class="token punctuation">{</span>
+  <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function">getFuzzyType</span><span class="token punctuation">(</span>int <span class="token variable">$i</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> int <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token variable">$i</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * @template-extends Foo&lt;string&gt;
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">Baz</span> <span class="token keyword">extends</span> <span class="token class-name">Foo</span> <span class="token punctuation">{</span>
+  <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function">getFuzzyType</span><span class="token punctuation">(</span>int <span class="token variable">$i</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> string <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">static</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span> <span class="token class-name"><span class="token punctuation">.</span></span> <span class="token single-quoted-string string">&apos;[&apos;</span> <span class="token punctuation">.</span> <span class="token variable">$i</span> <span class="token punctuation">.</span> <span class="token single-quoted-string string">&apos;]&apos;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="template-covariance">Template covariance</h2>
+<p>Imagine you have code like this:</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">class</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">Dog</span> <span class="token keyword">extends</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">Cat</span> <span class="token keyword">extends</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * @template T
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">Collection</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * @var array&lt;int, T&gt;
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">array</span> <span class="token variable">$list</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * @param array&lt;int, T&gt; $list
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__construct</span><span class="token punctuation">(</span><span class="token keyword">array</span> <span class="token variable">$list</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token keyword">list</span> <span class="token operator">=</span> <span class="token variable">$list</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * @param T $t
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token variable">$t</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> void <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token keyword">list</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token variable">$t</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * @param Collection&lt;Animal&gt; $collection
+ */</span>
+<span class="token keyword">function</span> <span class="token function">addAnimal</span><span class="token punctuation">(</span>Collection <span class="token variable">$collection</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> void <span class="token punctuation">{</span>
+    <span class="token variable">$collection</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Cat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * @param Collection&lt;Dog&gt; $dog_collection
+ */</span>
+<span class="token keyword">function</span> <span class="token function">takesDogList</span><span class="token punctuation">(</span>Collection <span class="token variable">$dog_collection</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> void <span class="token punctuation">{</span>
+    <span class="token function">addAnimal</span><span class="token punctuation">(</span><span class="token variable">$dog_collection</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>That last call <code>addAnimal($dog_collection)</code> breaks the type of the collection &#x2013; suddenly a collection of dogs becomes a collection of dogs <em>or</em> cats. That is bad.</p>
+<p>To prevent this, Psalm emits an error when calling <code>addAnimal($dog_collection)</code> saying &quot;addAnimal expects a <code>Collection<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Animal</span><span class="token punctuation">&gt;</span></span></code>, but <code>Collection<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Dog</span><span class="token punctuation">&gt;</span></span></code> was passed&quot;. If you haven&apos;t encountered this rule before it&apos;s probably confusing to you &#x2013; any function that accepted an <code>Animal</code> would be happy to accept a subtype thereof. But as we see in the example above, doing so can lead to problems.</p>
+<p>But there are also times where it&apos;s perfectly safe to pass template param subtypes:</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span>
+    <span class="token keyword">abstract</span> <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getNoise</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> string<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">Dog</span> <span class="token keyword">extends</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getNoise</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> string <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token double-quoted-string string">&quot;woof&quot;</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">Cat</span> <span class="token keyword">extends</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getNoise</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> string <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token double-quoted-string string">&quot;miaow&quot;</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * @template T
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">Collection</span> <span class="token punctuation">{</span>
+    <span class="token comment">/** @var array&lt;int, T&gt; */</span>
+    <span class="token keyword">public</span> <span class="token keyword">array</span> <span class="token variable">$list</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * @param Collection&lt;Animal&gt; $collection
+ */</span>
+<span class="token keyword">function</span> <span class="token function">getNoises</span><span class="token punctuation">(</span>Collection <span class="token variable">$collection</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> void <span class="token punctuation">{</span>
+    <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$collection</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token keyword">list</span> <span class="token keyword">as</span> <span class="token variable">$animal</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token variable">$animal</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getNoise</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * @param Collection&lt;Dog&gt; $dog_collection
+ */</span>
+<span class="token keyword">function</span> <span class="token function">takesDogList</span><span class="token punctuation">(</span>Collection <span class="token variable">$dog_collection</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> void <span class="token punctuation">{</span>
+    <span class="token function">getNoises</span><span class="token punctuation">(</span><span class="token variable">$dog_collection</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Here we&apos;re not doing anything bad &#x2013; we&apos;re just iterating over an array of objects. But Psalm still gives that same basic error &#x2013; &quot;getNoises expects a <code>Collection<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Animal</span><span class="token punctuation">&gt;</span></span></code>, but <code>Collection<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Dog</span><span class="token punctuation">&gt;</span></span></code> was passed&quot;.</p>
+<p>We can tell Psalm that it&apos;s safe to pass subtypes for the templated param <code>T</code> by using the annotation <code>@template-covariant T</code> (or <code>@psalm-template-covariant T</code>):</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">/**
+ * @template-covariant T
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">Collection</span> <span class="token punctuation">{</span>
+    <span class="token comment">/** @var array&lt;int, T&gt; */</span>
+    <span class="token keyword">public</span> <span class="token keyword">array</span> <span class="token variable">$list</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Doing this for the above example produces no errors: <a href="https://psalm.dev/r/5254af7a8b" target="_blank">https://psalm.dev/r/5254af7a8b</a></p>
+<p>But <code>@template-covariant</code> doesn&apos;t get rid of <em>all</em> errors &#x2013; if you add it to the first example, you get a new error &#x2013; <a href="https://psalm.dev/r/0fcd699231" target="_blank">https://psalm.dev/r/0fcd699231</a> &#x2013; complaining that you&apos;re attempting to use a covariant template parameter for function input. That&#x2019;s no good, as it means you&apos;re likely altering the collection somehow (which is, again, a violation).</p>
+<h3 id="but-what-about-immutability">But what about immutability?</h3>
+<p>Psalm has <a href="https://psalm.dev/articles/immutability-and-beyond" target="_blank">comprehensive support for declaring functional immutability</a>.</p>
+<p>If we make sure that the class is immutable, we can declare a class with an <code>add</code> method that still takes a covariant param as input, but which does not modify the collection at all, instead returning a new one:</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">/**
+ * @template-covariant T
+ * @psalm-immutable
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">Collection</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * @var array&lt;int, T&gt;
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">array</span> <span class="token variable">$list</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * @param array&lt;int, T&gt; $list
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__construct</span><span class="token punctuation">(</span><span class="token keyword">array</span> <span class="token variable">$list</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token keyword">list</span> <span class="token operator">=</span> <span class="token variable">$list</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * @param T $t
+     * @return Collection&lt;T&gt;
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token variable">$t</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> Collection <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Collection</span><span class="token punctuation">(</span><span class="token function">array_merge</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token keyword">list</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token variable">$t</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>This is perfectly valid, and Psalm won&apos;t complain.</p>
+<h2 id="builtin-templated-classes-and-interfaces">Builtin templated classes and interfaces</h2>
+<p>Psalm has support for a number of builtin classes and interfaces that you can extend/implement in your own code.</p>
+<ul>
+<li><code>interface Traversable<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span></code></li>
+<li><code>interface ArrayAccess<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span></code></li>
+<li><code>interface IteratorAggregate<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span> extends Traversable<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span></code></li>
+<li><code>interface Iterator<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span> extends Traversable<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span></code></li>
+<li><p><code>interface SeekableIterator<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span> extends Iterator<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span></code></p>
+</li>
+<li><p><code>class Generator<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue,</span> <span class="token attr-name">TSend,</span> <span class="token attr-name">TReturn</span><span class="token punctuation">&gt;</span></span> extends Traversable<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span></code></p>
+</li>
+<li><code>class ArrayObject<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span> implements IteratorAggregate<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span>, ArrayAccess<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span></code></li>
+<li><code>class ArrayIterator<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey</span> <span class="token attr-name">of</span> <span class="token attr-name">array-key,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span> implements SeekableIterator<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span>, ArrayAccess<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span></code></li>
+<li><code>class DOMNodeList<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TNode</span> <span class="token attr-name">of</span> <span class="token attr-name">DOMNode</span><span class="token punctuation">&gt;</span></span> implements Traversable<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int,</span> <span class="token attr-name">TNode</span><span class="token punctuation">&gt;</span></span></code></li>
+<li><code>class SplDoublyLinkedList<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span> implements Iterator<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span>, ArrayAccess<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span></code></li>
+<li><code>class SplQueue<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TValue</span><span class="token punctuation">&gt;</span></span> extends SplDoublyLinkedList<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span></code></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="supported_annotations.html" class="navigation navigation-prev " aria-label="Previous page: Supported Annotations">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="typing_in_psalm.html" class="navigation navigation-next " aria-label="Next page: Typing In Psalm">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Templated Annotations","level":"1.2.5","depth":2,"next":{"title":"Typing In Psalm","level":"1.2.6","depth":2,"path":"annotating_code/typing_in_psalm.md","ref":"annotating_code/typing_in_psalm.md","articles":[]},"previous":{"title":"Supported Annotations","level":"1.2.4","depth":2,"path":"annotating_code/supported_annotations.md","ref":"annotating_code/supported_annotations.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"psalm 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"annotating_code/templated_annotations.md","mtime":"2021-03-02T00:11:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-02T00:11:59.346Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1176 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Configuration · psalm 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="dealing_with_code_issues.html" />
+    
+    
+    <link rel="prev" href="command_line_usage.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Annotating Code
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    Type Syntax
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../annotating_code/type_syntax/array_types.html">
+            
+                <a href="../annotating_code/type_syntax/array_types.html">
+            
+                    
+                    Array Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../annotating_code/type_syntax/atomic_types.html">
+            
+                <a href="../annotating_code/type_syntax/atomic_types.html">
+            
+                    
+                    Atomic Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../annotating_code/type_syntax/callable_types.html">
+            
+                <a href="../annotating_code/type_syntax/callable_types.html">
+            
+                    
+                    Callable Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../annotating_code/type_syntax/conditional_types.html">
+            
+                <a href="../annotating_code/type_syntax/conditional_types.html">
+            
+                    
+                    Conditional Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../annotating_code/type_syntax/intersection_types.html">
+            
+                <a href="../annotating_code/type_syntax/intersection_types.html">
+            
+                    
+                    Intersection Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../annotating_code/type_syntax/object_types.html">
+            
+                <a href="../annotating_code/type_syntax/object_types.html">
+            
+                    
+                    Object Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="../annotating_code/type_syntax/scalar_types.html">
+            
+                <a href="../annotating_code/type_syntax/scalar_types.html">
+            
+                    
+                    Scalar Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="../annotating_code/type_syntax/union_types.html">
+            
+                <a href="../annotating_code/type_syntax/union_types.html">
+            
+                    
+                    Union Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="../annotating_code/type_syntax/value_types.html">
+            
+                <a href="../annotating_code/type_syntax/value_types.html">
+            
+                    
+                    Value Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../annotating_code/adding_assertions.html">
+            
+                <a href="../annotating_code/adding_assertions.html">
+            
+                    
+                    Adding Assertions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../annotating_code/assertion_syntax.html">
+            
+                <a href="../annotating_code/assertion_syntax.html">
+            
+                    
+                    Assertion Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../annotating_code/supported_annotations.html">
+            
+                <a href="../annotating_code/supported_annotations.html">
+            
+                    
+                    Supported Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../annotating_code/templated_annotations.html">
+            
+                <a href="../annotating_code/templated_annotations.html">
+            
+                    
+                    Templated Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../annotating_code/typing_in_psalm.html">
+            
+                <a href="../annotating_code/typing_in_psalm.html">
+            
+                    
+                    Typing In Psalm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Contributing
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../contributing/how_psalm_works.html">
+            
+                <a href="../contributing/how_psalm_works.html">
+            
+                    
+                    How Psalm Works
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../contributing/">
+            
+                <a href="../contributing/">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../contributing/philosophy.html">
+            
+                <a href="../contributing/philosophy.html">
+            
+                    
+                    Philosophy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../contributing/what_makes_psalm_complicated.html">
+            
+                <a href="../contributing/what_makes_psalm_complicated.html">
+            
+                    
+                    What Makes Psalm Complicated
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Manipulating Code
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../manipulating_code/fixing.html">
+            
+                <a href="../manipulating_code/fixing.html">
+            
+                    
+                    Fixing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../manipulating_code/refactoring.html">
+            
+                <a href="../manipulating_code/refactoring.html">
+            
+                    
+                    Refactoring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Running Psalm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="issues.html">
+            
+                <a href="issues.html">
+            
+                    
+                    Issues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    Plugins
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="plugins/authoring_plugins.html">
+            
+                <a href="plugins/authoring_plugins.html">
+            
+                    
+                    Authoring Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="plugins/plugins_type_system.html">
+            
+                <a href="plugins/plugins_type_system.html">
+            
+                    
+                    Plugins Type System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="plugins/using_plugins.html">
+            
+                <a href="plugins/using_plugins.html">
+            
+                    
+                    Using Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="checking_non_php_files.html">
+            
+                <a href="checking_non_php_files.html">
+            
+                    
+                    Checking Non Php Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="command_line_usage.html">
+            
+                <a href="command_line_usage.html">
+            
+                    
+                    Command Line Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.5" data-path="configuration.html">
+            
+                <a href="configuration.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="dealing_with_code_issues.html">
+            
+                <a href="dealing_with_code_issues.html">
+            
+                    
+                    Dealing With Code Issues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="error_levels.html">
+            
+                <a href="error_levels.html">
+            
+                    
+                    Error Levels
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="language_server.html">
+            
+                <a href="language_server.html">
+            
+                    
+                    Language Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Security Analysis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../security_analysis/annotations.html">
+            
+                <a href="../security_analysis/annotations.html">
+            
+                    
+                    Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../security_analysis/avoiding_false_negatives.html">
+            
+                <a href="../security_analysis/avoiding_false_negatives.html">
+            
+                    
+                    Avoiding False Negatives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../security_analysis/avoiding_false_positives.html">
+            
+                <a href="../security_analysis/avoiding_false_positives.html">
+            
+                    
+                    Avoiding False Positives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../security_analysis/custom_taint_sinks.html">
+            
+                <a href="../security_analysis/custom_taint_sinks.html">
+            
+                    
+                    Custom Taint Sinks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../security_analysis/custom_taint_sources.html">
+            
+                <a href="../security_analysis/custom_taint_sources.html">
+            
+                    
+                    Custom Taint Sources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../security_analysis/">
+            
+                <a href="../security_analysis/">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Configuration</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="configuration">Configuration</h1>
+<p>Psalm uses an XML config file (by default, <code>psalm.xml</code>). A barebones example looks like this:</p>
+<pre class="language-"><code class="lang-xml"><span class="token prolog">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>projectFiles</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>directory</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>src<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>projectFiles</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>psalm</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Configuration file may be split into several files using <a href="https://www.w3.org/TR/xinclude/" target="_blank">XInclude</a> tags (c.f. previous example):</p>
+<h4 id="psalmxml">psalm.xml</h4>
+<pre class="language-"><code class="lang-xml"><span class="token prolog">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+    <span class="token attr-name"><span class="token namespace">xmlns:</span>xsi</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2001/XMLSchema-instance<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://getpsalm.org/schema/config<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">xsi:</span>schemaLocation</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">xmlns:</span>xi</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2001/XInclude<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">xi:</span>include</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>files.xml<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>psalm</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h4 id="filesxml">files.xml</h4>
+<pre class="language-"><code class="lang-xml"><span class="token prolog">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>projectFiles</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://getpsalm.org/schema/config<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>file</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Bar.php<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>file</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Bat.php<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>projectFiles</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h2 id="optional-psalm--attributes">Optional &lt;psalm /&gt; attributes</h2>
+<h3 id="coding-style">Coding style</h3>
+<h4 id="errorlevel">errorLevel</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">errorLevel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[int]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<p>This corresponds to Psalm&#x2018;s <a href="error_levels.html">error-detection level</a>.</p>
+<h4 id="reportmixedissues">reportMixedIssues</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">reportMixedIssues</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<p>Setting this to <code>&quot;false&quot;</code> hides all issues with <code>Mixed</code> types in Psalm&#x2019;s output. If not given, this defaults to <code>&quot;false&quot;</code> when <code>errorLevel</code> is 3 or higher, and <code>&quot;true&quot;</code> when the error level is 1 or 2.</p>
+<h4 id="totallytyped">totallyTyped</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">totallyTyped</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<p>(Deprecated) Setting <code>totallyTyped</code> to <code>&quot;true&quot;</code> is equivalent to setting <code>errorLevel</code> to <code>&quot;1&quot;</code>. Setting <code>totallyTyped</code> to <code>&quot;false&quot;</code> is equivalent to setting <code>errorLevel</code> to <code>&quot;2&quot;</code> and <code>reportMixedIssues</code> to <code>&quot;false&quot;</code></p>
+<h4 id="resolvefromconfigfile">resolveFromConfigFile</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">resolveFromConfigFile</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<p>If this is enabled, relative directories mentioned in the config file will be resolved relative to the location
+of the config file. If it is disabled, or absent they will be resolved relative to the working directory of the Psalm process.</p>
+<p>New versions of Psalm enable this option when generating config files. Older versions did not include it.</p>
+<h4 id="usedocblocktypes">useDocblockTypes</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">useDocblockTypes</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Whether or not to use types as defined in docblocks. Defaults to <code>true</code>.</p>
+<h4 id="usedocblockpropertytypes">useDocblockPropertyTypes</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">useDocblockPropertyTypes</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>If not using all docblock types, you can still use docblock property types. Defaults to <code>false</code> (though only relevant if <code>useDocblockTypes</code> is <code>false</code>).</p>
+<h4 id="usephpdocmethodswithoutmagiccall">usePhpDocMethodsWithoutMagicCall</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">usePhpDocMethodsWithoutMagicCall</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>The PHPDoc <code>@method</code> annotation normally only applies to classes with a <code>__call</code> method. Setting this to <code>true</code> allows you to use the <code>@method</code> annotation to override inherited method return types. Defaults to <code>false</code>.</p>
+<h4 id="usephpdocpropertieswithoutmagiccall">usePhpDocPropertiesWithoutMagicCall</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">usePhpDocPropertiesWithoutMagicCall</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>The PHPDoc <code>@property</code>, <code>@property-read</code> and <code>@property-write</code> annotations normally only apply to classes with <code>__get</code>/<code>__set</code> methods. Setting this to <code>true</code> allows you to use the <code>@property</code>, <code>@property-read</code> and <code>@property-write</code> annotations to override property existence checks and resulting property types. Defaults to <code>false</code>.</p>
+<h4 id="strictbinaryoperands">strictBinaryOperands</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">strictBinaryOperands</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>If true we force strict typing on numerical and string operations (see <a href="https://github.com/vimeo/psalm/issues/24" target="_blank">https://github.com/vimeo/psalm/issues/24</a>). Defaults to <code>false</code>.</p>
+<h4 id="rememberpropertyassignmentsaftercall">rememberPropertyAssignmentsAfterCall</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">rememberPropertyAssignmentsAfterCall</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Setting this to <code>false</code> means that any function calls will cause Psalm to forget anything it knew about object properties within the scope of the function it&apos;s currently analysing. This duplicates functionality that Hack has. Defaults to <code>true</code>.</p>
+<h4 id="allowphpstormgenerics">allowPhpStormGenerics</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">allowPhpStormGenerics</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Allows you to specify whether or not to use the typed iterator docblock format supported by PHP Storm e.g. <code>ArrayIterator|string[]</code>, which Psalm transforms to <code>ArrayIterator<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span></code>. Defaults to <code>false</code>.</p>
+<h4 id="allowstringtostandinforclass">allowStringToStandInForClass</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">allowStringToStandInForClass</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>When <code>true</code>, strings can be used as classes, meaning <code>$some_string::someMethod()</code> is allowed. If <code>false</code>, only class constant strings (of the form <code>Foo\Bar::class</code>) can stand in for classes, otherwise an <code>InvalidStringClass</code> issue is emitted. Defaults to <code>false</code>.</p>
+<h4 id="memoizemethodcallresults">memoizeMethodCallResults</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">memoizeMethodCallResults</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>When <code>true</code>, the results of method calls without arguments passed arguments are remembered between repeated calls of that method on a given object. Defaults to <code>false</code>.</p>
+<h4 id="hoistconstants">hoistConstants</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">hoistConstants</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>When <code>true</code>, constants defined in a function in a file are assumed to be available when requiring that file, and not just when calling that function. Defaults to <code>false</code> (i.e. constants defined in functions will <em>only</em> be available for use when that function is called)</p>
+<h4 id="addparamdefaulttodocblocktype">addParamDefaultToDocblockType</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">addParamDefaultToDocblockType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Occasionally a param default will not match up with the docblock type. By default, Psalm emits an issue. Setting this flag to <code>true</code> causes it to expand the param type to include the param default. Defaults to <code>false</code>.</p>
+<h4 id="checkforthrowsdocblock">checkForThrowsDocblock</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">checkForThrowsDocblock</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>When <code>true</code>, Psalm will check that the developer has supplied <code>@throws</code> docblocks for every exception thrown in a given function or method. Defaults to <code>false</code>.</p>
+<h4 id="checkforthrowsinglobalscope">checkForThrowsInGlobalScope</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">checkForThrowsInGlobalScope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>When <code>true</code>, Psalm will check that the developer has caught every exception in global scope. Defaults to <code>false</code>.</p>
+<h4 id="ignoreinternalfunctionfalsereturn">ignoreInternalFunctionFalseReturn</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">ignoreInternalFunctionFalseReturn</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>When <code>true</code>, Psalm ignores possibly-false issues stemming from return values of internal functions (like <code>preg_split</code>) that may return false, but do so rarely. Defaults to <code>true</code>.</p>
+<h4 id="ignoreinternalfunctionnullreturn">ignoreInternalFunctionNullReturn</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">ignoreInternalFunctionNullReturn</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>When <code>true</code>, Psalm ignores possibly-null issues stemming from return values of internal array functions (like <code>current</code>) that may return null, but do so rarely. Defaults to <code>true</code>.</p>
+<h4 id="findunusedvariablesandparams">findUnusedVariablesAndParams</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">findUnusedVariablesAndParams</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>When <code>true</code>, Psalm will attempt to find all unused variables, the equivalent of running with <code>--find-unused-variables</code>. Defaults to <code>false</code>.</p>
+<h4 id="findunusedcode">findUnusedCode</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">findUnusedCode</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>When <code>true</code>, Psalm will attempt to find all unused code (including unused variables), the equivalent of running with <code>--find-unused-code</code>. Defaults to <code>false</code>.</p>
+<h4 id="findunusedpsalmsuppress">findUnusedPsalmSuppress</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">findUnusedPsalmSuppress</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>When <code>true</code>, Psalm will report all <code>@psalm-suppress</code> annotations that aren&apos;t used, the equivalent of running with <code>--find-unused-psalm-suppress</code>. Defaults to <code>false</code>.</p>
+<h4 id="loadxdebugstub">loadXdebugStub</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">loadXdebugStub</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>If not present, Psalm will only load the Xdebug stub if Psalm has unloaded the extension.
+When <code>true</code>, Psalm will load the Xdebug extension stub (as the extension is unloaded when Psalm runs).
+Setting to <code>false</code> prevents the stub from loading.</p>
+<h4 id="ensurearraystringoffsetsexist">ensureArrayStringOffsetsExist</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">ensureArrayStringOffsetsExist</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>When <code>true</code>, Psalm will complain when referencing an explicit string offset on an array e.g. <code>$arr[&apos;foo&apos;]</code> without a user first asserting that it exists (either via an <code>isset</code> check or via an object-like array). Defaults to <code>false</code>.</p>
+<h4 id="ensurearrayintoffsetsexist">ensureArrayIntOffsetsExist</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">ensureArrayIntOffsetsExist</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>When <code>true</code>, Psalm will complain when referencing an explicit integer offset on an array e.g. <code>$arr[7]</code> without a user first asserting that it exists (either via an <code>isset</code> check or via an object-like array). Defaults to <code>false</code>.</p>
+<h4 id="phpversion">phpVersion</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">phpVersion</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[string]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Set the php version Psalm should assume when checking and/or fixing the project. If this attribute is not set, Psalm uses the declaration in <code>composer.json</code> if one is present. It will check against the earliest version of PHP that satisfies the declared <code>php</code> dependency</p>
+<p>This can be overridden on the command-line using the <code>--php-version=</code> flag which takes the highest precedence over both the <code>phpVersion</code> setting and the version derived from <code>composer.json</code>.</p>
+<h4 id="skipchecksonunresolvableincludes">skipChecksOnUnresolvableIncludes</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">skipChecksOnUnresolvableIncludes</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>When <code>true</code>, Psalm will skip checking classes, variables and functions after it comes across an <code>include</code> or <code>require</code> it cannot resolve. This allows code to reference functions and classes unknown to Psalm.</p>
+<p>This defaults to <code>false</code>.</p>
+<h4 id="sealallmethods">sealAllMethods</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">sealAllMethods</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>When <code>true</code>, Psalm will treat all classes as if they had sealed methods, meaning that if you implement the magic method <code>__call</code>, you also have to add <code>@method</code> for each magic method. Defaults to false.</p>
+<h4 id="runtaintanalysis">runTaintAnalysis</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">runTaintAnalysis</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>When <code>true</code>, Psalm will run <a href="../security_analysis/">Taint Analysis</a> on your codebase. This config is the same as if you were running Psalm with <code>--taint-analysis</code>.</p>
+<h4 id="reportinfo">reportInfo</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">reportInfo</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>When <code>false</code>, Psalm will not consider issue at lower level than <code>errorLevel</code> as <code>info</code> (they will be suppressed instead). This can be a big improvement in analysis time for big projects. However, this config will prevent Psalm to count or suggest fixes for suppressed issue</p>
+<h3 id="running-psalm">Running Psalm</h3>
+<h4 id="autoloader">autoloader</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">autoloader</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[string]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>If your application registers one or more custom autoloaders, and/or declares universal constants/functions, this autoloader script will be executed by Psalm before scanning starts. Psalm always registers composer&apos;s autoloader by default.</p>
+<h4 id="throwexceptiononerror">throwExceptionOnError</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">throwExceptionOnError</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Useful in testing, this makes Psalm throw a regular-old exception when it encounters an error. Defaults to <code>false</code>.</p>
+<h4 id="hideexternalerrors">hideExternalErrors</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">hideExternalErrors</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Whether or not to show issues in files that are used by your project files, but which are not included in <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>projectFiles</span><span class="token punctuation">&gt;</span></span></code>. Defaults to <code>false</code>.</p>
+<h4 id="cachedirectory">cacheDirectory</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">cacheDirectory</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[string]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>The directory used to store Psalm&apos;s cache data - if you specify one (and it does not already exist), its parent directory must already exist, otherwise Psalm will throw an error.</p>
+<p>Defaults to <code>$XDG_CACHE_HOME/psalm</code>. If <code>$XDG_CACHE_HOME</code> is either not set or empty, a default equal to <code>$HOME/.cache/psalm</code> is used or <code>sys_get_temp_dir() . &apos;/psalm&apos;</code> when not defined.</p>
+<h4 id="allowfileincludes">allowFileIncludes</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">allowFileIncludes</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[bool]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Whether or not to allow <code>require</code>/<code>include</code> calls in your PHP. Defaults to <code>true</code>.</p>
+<h4 id="serializer">serializer</h4>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>psalm</span>
+  <span class="token attr-name">serializer</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[&apos;igbinary&apos;|&apos;default&apos;]<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Allows you to hard-code a serializer for Psalm to use when caching data. By default, Psalm uses <code>ext-igbinary</code> <em>if</em> the version is greater than or equal to 2.0.5, otherwise it defaults to PHP&apos;s built-in serializer.</p>
+<h2 id="project-settings">Project settings</h2>
+<h4 id="projectfiles">&lt;projectFiles&gt;</h4>
+<p>Contains a list of all the directories that Psalm should inspect. You can also specify a set of files and folders to ignore with the <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ignoreFiles</span><span class="token punctuation">&gt;</span></span></code> directive, e.g.</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>projectFiles</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>directory</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>src<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ignoreFiles</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>directory</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>src/Stubs<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ignoreFiles</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>projectFiles</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h4 id="extrafiles">&lt;extraFiles&gt;</h4>
+<p>Optional. Same format as <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>projectFiles</span><span class="token punctuation">&gt;</span></span></code>. Directories Psalm should load but not inspect.</p>
+<h4 id="fileextensions">&lt;fileExtensions&gt;</h4>
+<p>Optional. A list of extensions to search over. See <a href="checking_non_php_files.html">Checking non-PHP files</a> to understand how to extend this.</p>
+<h4 id="plugins">&lt;plugins&gt;</h4>
+<p>Optional. A list of <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugin</span> <span class="token attr-name">filename</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>path_to_plugin.php<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span></code> entries. See the <a href="plugins/using_plugins.html">Plugins</a> section for more information.</p>
+<h4 id="issuehandlers">&lt;issueHandlers&gt;</h4>
+<p>Optional. If you don&apos;t want Psalm to complain about every single issue it finds, the issueHandler tag allows you to configure that. <a href="dealing_with_code_issues.html">Dealing with code issues</a> tells you more.</p>
+<h4 id="mockclasses">&lt;mockClasses&gt;</h4>
+<p>Optional. Do you use mock classes in your tests? If you want Psalm to ignore them when checking files, include a fully-qualified path to the class with <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Your\Namespace\ClassName<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span></code></p>
+<h4 id="universalobjectcrates">&lt;universalObjectCrates&gt;</h4>
+<p>Optional. Do you have objects with properties that cannot be determined statically? If you want Psalm to treat all properties on a given classlike as mixed, include a fully-qualified path to the class with <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Your\Namespace\ClassName<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span></code>. By default, <code>stdClass</code> and <code>SimpleXMLElement</code> are configured to be universal object crates.</p>
+<h4 id="stubs">&lt;stubs&gt;</h4>
+<p>Optional. If your codebase uses classes and functions that are not visible to Psalm via reflection
+(e.g. if there are internal packages that your codebase relies on that are not available on the machine running Psalm),
+you can use stub files. Used by PhpStorm (a popular IDE) and others, stubs provide a description of classes and
+functions without the implementations.</p>
+<p>You can find a list of stubs for common classes <a href="https://github.com/JetBrains/phpstorm-stubs" target="_blank">here</a>.
+List out each file with <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>file</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>path/to/file.php<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span></code>. In case classes to be tested use parent classes
+or interfaces defined in a stub file, this stub should be configured with attribute <code>preloadClasses=&quot;true&quot;</code>.</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stubs</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>file</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>path/to/file.php<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>file</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>path/to/abstract-class.php<span class="token punctuation">&quot;</span></span> <span class="token attr-name">preloadClasses</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>stubs</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h4 id="ignoreexceptions">&lt;ignoreExceptions&gt;</h4>
+<p>Optional. A list of exceptions to not report for <code>checkForThrowsDocblock</code> or <code>checkForThrowsInGlobalScope</code>. If an exception has <code>onlyGlobalScope</code> set to <code>true</code>, only <code>checkForThrowsInGlobalScope</code> is ignored for that exception, e.g.</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ignoreExceptions</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fully\qualified\path\Exc<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onlyGlobalScope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ignoreExceptions</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h4 id="globals">&lt;globals&gt;</h4>
+<p>Optional. If your codebase uses global variables that are accessed with the <code>global</code> keyword, you can declare their type.  e.g.</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>globals</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>var</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>globalVariableName<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>type<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>globals</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Some frameworks and libraries expose functionalities through e.g. <code>$GLOBALS[DB]-&gt;query($query)</code>.
+The  following configuration declares custom types for super-globals (<code>$GLOBALS</code>, <code>$_GET</code>, ...).</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>globals</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>var</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>$GLOBALS<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>array{DB: MyVendor\DatabaseConnection, VIEW: MyVendor\TemplateView}<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>var</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>$_GET<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>array{data: array&lt;string, string&gt;}<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>     
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>globals</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>The example above declares global variables as shown below</p>
+<ul>
+<li><code>$GLOBALS</code><ul>
+<li><code>DB</code> of type <code>MyVendor\DatabaseConnection</code></li>
+<li><code>VIEW</code> of type <code>MyVendor\TemplateView</code></li>
+</ul>
+</li>
+<li><code>$_GET</code><ul>
+<li><code>data</code> e.g. like <code>[&quot;id&quot; =&gt; &quot;123&quot;, &quot;title&quot; =&gt; &quot;Nice&quot;]</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="accessing-psalm-configuration-in-plugins">Accessing Psalm configuration in plugins</h2>
+<p>Plugins can access or modify the global configuration in plugins using
+<a href="https://github.com/vimeo/psalm/blob/master/src/Psalm/Config.php" target="_blank">singleton Psalm\Config</a>.</p>
+<pre class="language-"><code class="lang-php"><span class="token variable">$config</span> <span class="token operator">=</span> \<span class="token package">Psalm<span class="token punctuation">\</span>Config</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">isset</span><span class="token punctuation">(</span><span class="token variable">$config</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">globals</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;$GLOBALS&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$config</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">globals</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;$GLOBALS&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token single-quoted-string string">&apos;array{data: array&lt;string, string&gt;}&apos;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="command_line_usage.html" class="navigation navigation-prev " aria-label="Previous page: Command Line Usage">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="dealing_with_code_issues.html" class="navigation navigation-next " aria-label="Next page: Dealing With Code Issues">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Configuration","level":"1.5.5","depth":2,"next":{"title":"Dealing With Code Issues","level":"1.5.6","depth":2,"path":"running_psalm/dealing_with_code_issues.md","ref":"running_psalm/dealing_with_code_issues.md","articles":[]},"previous":{"title":"Command Line Usage","level":"1.5.4","depth":2,"path":"running_psalm/command_line_usage.md","ref":"running_psalm/command_line_usage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"psalm 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"running_psalm/configuration.md","mtime":"2021-03-02T00:11:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-02T00:11:59.346Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1000 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Plugins Type System · psalm 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="using_plugins.html" />
+    
+    
+    <link rel="prev" href="authoring_plugins.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Annotating Code
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    Type Syntax
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../annotating_code/type_syntax/array_types.html">
+            
+                <a href="../../annotating_code/type_syntax/array_types.html">
+            
+                    
+                    Array Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../annotating_code/type_syntax/atomic_types.html">
+            
+                <a href="../../annotating_code/type_syntax/atomic_types.html">
+            
+                    
+                    Atomic Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../annotating_code/type_syntax/callable_types.html">
+            
+                <a href="../../annotating_code/type_syntax/callable_types.html">
+            
+                    
+                    Callable Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../annotating_code/type_syntax/conditional_types.html">
+            
+                <a href="../../annotating_code/type_syntax/conditional_types.html">
+            
+                    
+                    Conditional Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../../annotating_code/type_syntax/intersection_types.html">
+            
+                <a href="../../annotating_code/type_syntax/intersection_types.html">
+            
+                    
+                    Intersection Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../../annotating_code/type_syntax/object_types.html">
+            
+                <a href="../../annotating_code/type_syntax/object_types.html">
+            
+                    
+                    Object Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="../../annotating_code/type_syntax/scalar_types.html">
+            
+                <a href="../../annotating_code/type_syntax/scalar_types.html">
+            
+                    
+                    Scalar Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="../../annotating_code/type_syntax/union_types.html">
+            
+                <a href="../../annotating_code/type_syntax/union_types.html">
+            
+                    
+                    Union Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="../../annotating_code/type_syntax/value_types.html">
+            
+                <a href="../../annotating_code/type_syntax/value_types.html">
+            
+                    
+                    Value Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../annotating_code/adding_assertions.html">
+            
+                <a href="../../annotating_code/adding_assertions.html">
+            
+                    
+                    Adding Assertions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../annotating_code/assertion_syntax.html">
+            
+                <a href="../../annotating_code/assertion_syntax.html">
+            
+                    
+                    Assertion Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../annotating_code/supported_annotations.html">
+            
+                <a href="../../annotating_code/supported_annotations.html">
+            
+                    
+                    Supported Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../annotating_code/templated_annotations.html">
+            
+                <a href="../../annotating_code/templated_annotations.html">
+            
+                    
+                    Templated Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../annotating_code/typing_in_psalm.html">
+            
+                <a href="../../annotating_code/typing_in_psalm.html">
+            
+                    
+                    Typing In Psalm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Contributing
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../contributing/how_psalm_works.html">
+            
+                <a href="../../contributing/how_psalm_works.html">
+            
+                    
+                    How Psalm Works
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../contributing/">
+            
+                <a href="../../contributing/">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../contributing/philosophy.html">
+            
+                <a href="../../contributing/philosophy.html">
+            
+                    
+                    Philosophy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../contributing/what_makes_psalm_complicated.html">
+            
+                <a href="../../contributing/what_makes_psalm_complicated.html">
+            
+                    
+                    What Makes Psalm Complicated
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Manipulating Code
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../manipulating_code/fixing.html">
+            
+                <a href="../../manipulating_code/fixing.html">
+            
+                    
+                    Fixing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../manipulating_code/refactoring.html">
+            
+                <a href="../../manipulating_code/refactoring.html">
+            
+                    
+                    Refactoring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Running Psalm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../issues.html">
+            
+                <a href="../issues.html">
+            
+                    
+                    Issues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    Plugins
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="authoring_plugins.html">
+            
+                <a href="authoring_plugins.html">
+            
+                    
+                    Authoring Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2.2" data-path="plugins_type_system.html">
+            
+                <a href="plugins_type_system.html">
+            
+                    
+                    Plugins Type System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="using_plugins.html">
+            
+                <a href="using_plugins.html">
+            
+                    
+                    Using Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../checking_non_php_files.html">
+            
+                <a href="../checking_non_php_files.html">
+            
+                    
+                    Checking Non Php Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../command_line_usage.html">
+            
+                <a href="../command_line_usage.html">
+            
+                    
+                    Command Line Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../configuration.html">
+            
+                <a href="../configuration.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../dealing_with_code_issues.html">
+            
+                <a href="../dealing_with_code_issues.html">
+            
+                    
+                    Dealing With Code Issues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../error_levels.html">
+            
+                <a href="../error_levels.html">
+            
+                    
+                    Error Levels
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../installation.html">
+            
+                <a href="../installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../language_server.html">
+            
+                <a href="../language_server.html">
+            
+                    
+                    Language Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Security Analysis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../security_analysis/annotations.html">
+            
+                <a href="../../security_analysis/annotations.html">
+            
+                    
+                    Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../security_analysis/avoiding_false_negatives.html">
+            
+                <a href="../../security_analysis/avoiding_false_negatives.html">
+            
+                    
+                    Avoiding False Negatives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../security_analysis/avoiding_false_positives.html">
+            
+                <a href="../../security_analysis/avoiding_false_positives.html">
+            
+                    
+                    Avoiding False Positives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../security_analysis/custom_taint_sinks.html">
+            
+                <a href="../../security_analysis/custom_taint_sinks.html">
+            
+                    
+                    Custom Taint Sinks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../security_analysis/custom_taint_sources.html">
+            
+                <a href="../../security_analysis/custom_taint_sources.html">
+            
+                    
+                    Custom Taint Sources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../security_analysis/">
+            
+                <a href="../../security_analysis/">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Plugins Type System</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="plugins-type-system-internals">Plugins: type system internals</h1>
+<p>Psalm&apos;s type system represents the types of variables within a program using different classes. Plugins both receive, and can update this type information.</p>
+<h2 id="union-types">Union types</h2>
+<p>All type information you are likely to use will be wrapped in a <a href="../../annotating_code/type_syntax/union_types.html">Union Type</a>.</p>
+<p>The <code>Union</code> class constructor takes an array of <code>Atomic</code> types, and can represent one or more of these types at a time. They correspond to a vertical bar in a doc comment.</p>
+<pre class="language-"><code class="lang-php"><span class="token keyword">new</span> <span class="token class-name">Union</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token keyword">new</span> <span class="token class-name">TNamedObject</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;Foo\\Bar\\SomeClass&apos;</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// equivalent to Foo\Bar\SomeClass in docblock</span>
+<span class="token keyword">new</span> <span class="token class-name">Union</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token keyword">new</span> <span class="token class-name">TString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">TInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// equivalent to string|int in docblock</span>
+</code></pre>
+<h2 id="atomic-types">Atomic types</h2>
+<p>Primitive types like floats, integers and strings, plus arrays, and classes. You can find all of these in <a href="https://github.com/vimeo/psalm/tree/master/src/Psalm/Type/Atomic" target="_blank"><code>src/Psalm/Types/Atomic</code></a>.</p>
+<p>Note that all non-abstract classes in this folder are valid types. They are all prefixed by &apos;T&apos;.</p>
+<p>The classes are as follows:</p>
+<h3 id="misc">Misc</h3>
+<p><code>TVoid</code> - denotes the <code>void</code> type, normally just used to annotate a function/method that returns nothing</p>
+<p><code>TNull</code> - denotes the <code>null</code> type</p>
+<p><code>TNever</code> - denotes the <code>no-return</code>/<code>never-return</code> type for functions that never return, either throwing an exception or terminating (like the builtin <code>exit()</code>).</p>
+<p><code>TMixed</code> - denotes the <code>mixed</code> type, used when you don&#x2019;t know the type of an expression.</p>
+<p><code>TNonEmptyMixed</code>- as above, but not empty. Generated for <code>$x</code> inside the <code>if</code> statement <code>if ($x) {...}</code> when <code>$x</code> is <code>mixed</code> outside.</p>
+<p><code>TEmptyMixed</code> - as above, but empty. Generated for <code>$x</code> inside the <code>if</code> statement <code>if (!$x) {...}</code> when <code>$x</code> is <code>mixed</code> outside.</p>
+<p><code>TEmpty</code> - denotes the <code>empty</code> type, used to describe a type corresponding to no value whatsoever. Empty arrays <code>[]</code> have the type <code>array<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>empty,</span> <span class="token attr-name">empty</span><span class="token punctuation">&gt;</span></span></code>.</p>
+<p><code>TIterable</code> - denotes the <a href="https://www.php.net/manual/en/language.types.iterable.php" target="_blank"><code>iterable</code> type</a> (which can also result from an <code>is_iterable</code> check).</p>
+<p><code>TResource</code> - denotes the <code>resource</code> type (e.g. a file handle).</p>
+<p><code>TClosedResource</code> - denotes the <code>resource</code> type that has been closed (e.g. a file handle through <code>fclose()</code>).</p>
+<p><code>TAssertionFalsy</code> - Represents any value reduced to false when computed in boolean context. This is used for assertions</p>
+<p><code>TConditional</code> - Internal representation of a conditional return type in phpdoc. For example ($param1 is int ? int : string)</p>
+<p><code>TIntMask</code> - Represents the type that is the result of a bitmask combination of its parameters. <code>int-mask&lt;1, 2, 4&gt;</code> corresponds to <code>1|2|3|4|5|6|7</code></p>
+<p><code>TIntMaskOf</code> - as above, but used with with a reference to constants in code<code>int-mask<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">MyClass:</span>:CLASS_CONSTANT_*</span><span class="token punctuation">&gt;</span></span></code> will corresponds to <code>1|2|3|4|5|6|7</code> if there are three constant 1, 2 and 4</p>
+<p><code>TKeyOfClassConstant</code> - Represents an offset of a class constant array.</p>
+<p><code>TValueOfClassConstant</code> - Represents a value of a class constant array.</p>
+<p><code>TTemplateIndexedAccess</code> - To be documented</p>
+<p><code>TTemplateKeyOf</code> - Represents the type used when using TKeyOfClassConstant when the type of the class constant array is a template</p>
+<p><code>TTypeAlias</code> - To be documented</p>
+<h3 id="scalar-supertype">Scalar supertype</h3>
+<p><code>TScalar</code> - denotes the <code>scalar</code> super type (which can also result from an <code>is_scalar</code> check). This type encompasses <code>float</code>, <code>int</code>, <code>bool</code> and <code>string</code>.</p>
+<p><code>TEmptyScalar</code> - denotes a <code>scalar</code> type that is also empty.</p>
+<p><code>TNonEmptyScalar</code> - denotes a <code>scalar</code> type that is also non-empty.</p>
+<h3 id="numeric-supertype">Numeric supertype</h3>
+<p><code>TNumeric</code> - denotes the <code>numeric</code> type (which can also result from an <code>is_numeric</code> check).</p>
+<p><code>TEmptyNumeric</code> - denotes the <code>numeric</code> type that&apos;s also empty (which can also result from an <code>is_numeric</code> and <code>empty</code> check).</p>
+<h3 id="scalar-types">Scalar types</h3>
+<p>All scalar types have literal versions e.g. <code>int</code> vs <code>int(5)</code>.</p>
+<h4 id="ints">Ints</h4>
+<p><code>TInt</code> - denotes the <code>int</code> type, where the exact value is unknown.</p>
+<p><code>TLiteralInt</code> - is used to represent an integer value where the exact numeric value is known.</p>
+<p><code>TPositiveInt</code> - denotes an int that is also positive (strictly &gt; 0)</p>
+<h4 id="floats">Floats</h4>
+<p><code>TFloat</code> - denotes the <code>float</code> type, where the exact value is unknown.</p>
+<p><code>TLiteralFloat</code> - is used to represent a floating point value where the exact numeric value is known.</p>
+<h4 id="bools">Bools</h4>
+<p><code>TBool</code>, <code>TFalse</code>, <code>TTrue</code></p>
+<p><code>TBool</code> - denotes the <code>bool</code> type where the exact value is unknown.</p>
+<p><code>TFalse</code> - denotes the <code>false</code> value type</p>
+<p><code>TTrue</code> - denotes the <code>true</code> value type</p>
+<pre class="language-"><code class="lang-php"><span class="token comment">/** @return string|false    false when string is empty, first char of the parameter otherwise */</span>
+<span class="token keyword">function</span> <span class="token function">firstChar</span><span class="token punctuation">(</span>string <span class="token variable">$s</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token keyword">empty</span><span class="token punctuation">(</span><span class="token variable">$s</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token boolean constant">false</span> <span class="token punctuation">:</span> <span class="token variable">$s</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</code></pre>
+<p>Here, the function may never return true, but if you had to replace false with bool, Psalm would have to consider true as a possible return value. With narrower type it&apos;s able to report meaningless code like this (<a href="https://psalm.dev/r/037291351d" target="_blank">https://psalm.dev/r/037291351d</a>):</p>
+<pre class="language-"><code class="lang-php"><span class="token variable">$first</span> <span class="token operator">=</span> <span class="token function">firstChar</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;sdf&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean constant">true</span> <span class="token operator">===</span> <span class="token variable">$first</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">echo</span> <span class="token double-quoted-string string">&quot;This is actually dead code&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="strings">Strings</h4>
+<p><code>TString</code> - denotes the <code>string</code> type, where the exact value is unknown.</p>
+<p><code>TNonEmptyString</code> - denotes a string, that is also non-empty</p>
+<p><code>TNumericString</code> - denotes a string that&apos;s also a numeric value e.g. <code>&quot;5&quot;</code>. It can result from <code>is_string($s) &amp;&amp; is_numeric($s)</code>.</p>
+<p><code>TLiteralString</code> - is used to represent a string whose value is known.</p>
+<p><code>TClassString</code> - denotes the <code>class-string</code> type, used to describe a string representing a valid PHP class. The parent type from which the classes descend may or may not be specified in the constructor.</p>
+<p><code>TLiteralClassString</code> - denotes a specific class string, generated by expressions like <code>A::class</code>.</p>
+<p><code>TTraitString</code> - denotes the <code>trait-string</code> type, used to describe a string representing a valid PHP trait.</p>
+<p><code>TDependentGetClass</code> - Represents a string whose value is a fully-qualified class found by get_class($var)</p>
+<p><code>TDependentGetDebugType</code> - Represents a string whose value is that of a type found by get_debug_type($var)</p>
+<p><code>TDependentGetType</code> - Represents a string whose value is that of a type found by gettype($var)</p>
+<p><code>TCallableString</code> - denotes the <code>callable-string</code> type, used to represent an unknown string that is also <code>callable</code>.</p>
+<p><code>THtmlEscapedString</code>, <code>TSqlSelectString</code> - these are special types, specifically for consumption by plugins.</p>
+<p><code>TLowercaseString</code> - denotes a string where every character is lowercased. (which can also result from a <code>strtolower</code> call).</p>
+<p><code>TNonEmptyLowercaseString</code> - denotes a non-empty-string where every character is lowercased. (which can also result from a <code>strtolower</code> call).</p>
+<p><code>TSingleLetter</code> - denotes a string that has a length of 1</p>
+<h4 id="scalar-class-constants">Scalar class constants</h4>
+<p><code>TScalarClassConstant</code> - denotes a class constant whose value might not yet be known.</p>
+<h4 id="array-key-supertype">Array key supertype</h4>
+<p><code>TArrayKey</code> - denotes the <code>array-key</code> type, used for something that could be the offset of an <code>array</code>.</p>
+<h3 id="arrays">Arrays</h3>
+<p><code>TArray</code> - denotes a simple array of the form <code>array<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TKey,</span> <span class="token attr-name">TValue</span><span class="token punctuation">&gt;</span></span></code>. It expects an array with two elements, both union types.</p>
+<p><code>TList</code> - Represents an array that has some particularities: its keys are integers, they start at 0, they are consecutive and go upwards (no negative int)</p>
+<p><code>TNonEmptyArray</code> - as above, but denotes an array known to be non-empty.</p>
+<p><code>TKeyedArray</code> represents an &apos;object-like array&apos; - an array with known keys.</p>
+<pre class="language-"><code class="lang-php"><span class="token variable">$x</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token double-quoted-string string">&quot;a&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token double-quoted-string string">&quot;b&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// is TKeyedArray, array{a: int, b: int}</span>
+<span class="token variable">$y</span> <span class="token operator">=</span> <span class="token function">rand</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token punctuation">[</span><span class="token double-quoted-string string">&quot;a&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token constant">null</span><span class="token punctuation">]</span> <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token double-quoted-string string">&quot;a&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token double-quoted-string string">&quot;b&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token double-quoted-string string">&quot;b&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// is TKeyedArray with optional keys/values, array{a: ?int, b?: string}</span>
+</code></pre>
+<p>Note that not all associative arrays are considered object-like. If the keys are not known, the array is treated as a mapping between two types.</p>
+<pre class="language-"><code class="lang-php"><span class="token variable">$a</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token function">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token variable">$_</span><span class="token punctuation">)</span> <span class="token variable">$a</span><span class="token punctuation">[</span><span class="token punctuation">(</span>string<span class="token punctuation">)</span><span class="token function">rand</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">rand</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// array&lt;string,int&gt;</span>
+</code></pre>
+<p><code>TCallableArray</code> - denotes an array that is <em>also</em> <code>callable</code>.</p>
+<p><code>TCallableList</code> - denotes a list that is <em>also</em> <code>callable</code>.</p>
+<p><code>TCallableKeyedArray</code> - denotes an object-like array that is <em>also</em> <code>callable</code>.</p>
+<p><code>TClassStringMap</code> - Represents an array where the type of each value is a function of its string key value</p>
+<h3 id="callables--closures">Callables &amp; closures</h3>
+<p><code>TCallable</code> - denotes the <code>callable</code> type. Can result from an <code>is_callable</code> check.
+<code>TClosure</code> - denotes a <code>Closure</code> type.</p>
+<p><code>TCallable</code> and <code>TClosure</code> can optionally be defined with parameters and return types, too</p>
+<h3 id="object-supertypes">Object supertypes</h3>
+<p><code>TObject</code> - denotes the <code>object</code> type</p>
+<p><code>TObjectWithProperties</code> - an object with specified member variables e.g. <code>object{foo:int, bar:string}</code>.</p>
+<h3 id="object-types">Object types</h3>
+<p><code>TNamedObject</code> - denotes an object type where the type of the object is known e.g. <code>Exception</code>, <code>Throwable</code>, <code>Foo\Bar</code></p>
+<p><code>TGenericObject</code> - denotes an object type that has generic parameters e.g. <code>ArrayObject<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string,</span> <span class="token attr-name">Foo\Bar</span><span class="token punctuation">&gt;</span></span></code></p>
+<p><code>TCallableObject</code> - denotes an object that is also <code>callable</code> (i.e. it has <code>__invoke</code> defined).</p>
+<p><code>TAnonymousClassInstance</code> - Denotes an anonymous class (i.e. <code>new class{}</code>) with potential methods</p>
+<h3 id="template">Template</h3>
+<p><code>TTemplateParam</code> - denotes a template parameter that has been previously specified in a <code>@template</code> tag.</p>
+<p><code>TTemplateParamClass</code> - denotes a <code>class-string</code> corresponding to a template parameter previously specified in a <code>@template</code> tag.</p>
+<h2 id="creating-type-object-instances">Creating type object instances</h2>
+<p>There are two ways of creating the object instances which describe a given type. They can be created directly using new, or created declaratively from a doc string. Normally, you&apos;d want to use the second option. However, understanding the structure of this data will help you understand types passed into a plugin.</p>
+<p>Note that these classes do sometimes change, so <code>Type::parseString</code> is always going to be the more robust option.</p>
+<h3 id="creating-type-object-instances-directly">Creating type object instances directly</h3>
+<p>The following example constructs types representing a string, a floating-point number, and a class called &apos;Foo\Bar\SomeClass&apos;.</p>
+<pre class="language-"><code class="lang-php"><span class="token keyword">new</span> <span class="token class-name">TLiteralString</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;A text string&apos;</span><span class="token punctuation">)</span>
+<span class="token keyword">new</span> <span class="token class-name">TLiteralFloat</span><span class="token punctuation">(</span><span class="token number">3.142</span><span class="token punctuation">)</span>
+<span class="token keyword">new</span> <span class="token class-name">TNamedObject</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;Foo\Bar\SomeClass&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<p>Types within Psalm are always wrapped in a union as a convenience feature. Almost anywhere you may expect a type, you can get a union as well (property types, return types, argument types, etc). So wrapping a single atomic type (like TInt) in a union container allows to uniformly handle that type elsewhere, without repetitive checks like this:</p>
+<pre class="language-"><code class="lang-php"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$type</span> <span class="token keyword">instanceof</span> <span class="token class-name">Union</span><span class="token punctuation">)</span>
+   <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$types</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getTypes</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token variable">$atomic</span><span class="token punctuation">)</span>
+      <span class="token function">handleAtomic</span><span class="token punctuation">(</span><span class="token variable">$atomic</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">else</span> <span class="token function">handleAtomic</span><span class="token punctuation">(</span><span class="token variable">$type</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// with union container it becomes</span>
+<span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$types</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getTypes</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token variable">$atomic</span><span class="token punctuation">)</span>
+   <span class="token function">handleAtomic</span><span class="token punctuation">(</span><span class="token variable">$atomic</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Also, union trees are always shallow, because Psalm will flatten union of unions into a single-level union <code>((A|B)|(C|D) =&gt; A|B|C|D)</code>.</p>
+<p>More complex types can be constructed as follows. The following represents an associative array with 3 keys. Psalm calls these &apos;object-like arrays&apos;, and represents them with the &apos;TKeyedArray&apos; class.</p>
+<pre class="language-"><code class="lang-php">        <span class="token keyword">new</span> <span class="token class-name">Union</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+            <span class="token keyword">new</span> <span class="token class-name">TKeyedArray</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+                <span class="token single-quoted-string string">&apos;key_1&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">new</span> <span class="token class-name">Union</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token keyword">new</span> <span class="token class-name">TString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                <span class="token single-quoted-string string">&apos;key_2&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">new</span> <span class="token class-name">Union</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token keyword">new</span> <span class="token class-name">TInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                <span class="token single-quoted-string string">&apos;key_3&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">new</span> <span class="token class-name">Union</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token keyword">new</span> <span class="token class-name">TBool</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>The Type object includes some static helper methods, which automatically wrap the type in a Union. Thus this can be written more tersely:</p>
+<pre class="language-"><code class="lang-php"><span class="token keyword">new</span> <span class="token class-name">Union</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token keyword">new</span> <span class="token class-name">Type<span class="token punctuation">\</span>Atomic<span class="token punctuation">\</span>TKeyedArray</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+        <span class="token single-quoted-string string">&apos;first&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Type<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">getInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">&apos;second&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Type<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">getString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>You can also use <code>Type::getInt(5)</code> to generate a union type corresponding to the literal int value 5.</p>
+<h3 id="creating-type-object-instances-from-doc-string-types">Creating type object instances from doc string types</h3>
+<p>Another way of creating these instances is to use the class <code>Psalm\Type</code> which includes a static method <code>parseString</code>. You may pass any doc string type description to this, and it will return the corresponding object representation.</p>
+<pre class="language-"><code class="lang-php">\<span class="token package">Psalm<span class="token punctuation">\</span>Type</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">parseString</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;int|null&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>You can find how Psalm would represent a given type as objects, by specifying the type as an input to this function, and calling <code>var_dump</code> on the result.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="authoring_plugins.html" class="navigation navigation-prev " aria-label="Previous page: Authoring Plugins">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="using_plugins.html" class="navigation navigation-next " aria-label="Next page: Using Plugins">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Plugins Type System","level":"1.5.2.2","depth":3,"next":{"title":"Using Plugins","level":"1.5.2.3","depth":3,"path":"running_psalm/plugins/using_plugins.md","ref":"running_psalm/plugins/using_plugins.md","articles":[]},"previous":{"title":"Authoring Plugins","level":"1.5.2.1","depth":3,"path":"running_psalm/plugins/authoring_plugins.md","ref":"running_psalm/plugins/authoring_plugins.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"psalm 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"running_psalm/plugins/plugins_type_system.md","mtime":"2021-03-02T00:11:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-02T00:11:59.346Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

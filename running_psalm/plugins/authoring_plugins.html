@@ -1,0 +1,939 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Authoring Plugins · psalm 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="plugins_type_system.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Annotating Code
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    Type Syntax
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../annotating_code/type_syntax/array_types.html">
+            
+                <a href="../../annotating_code/type_syntax/array_types.html">
+            
+                    
+                    Array Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../annotating_code/type_syntax/atomic_types.html">
+            
+                <a href="../../annotating_code/type_syntax/atomic_types.html">
+            
+                    
+                    Atomic Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../annotating_code/type_syntax/callable_types.html">
+            
+                <a href="../../annotating_code/type_syntax/callable_types.html">
+            
+                    
+                    Callable Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../annotating_code/type_syntax/conditional_types.html">
+            
+                <a href="../../annotating_code/type_syntax/conditional_types.html">
+            
+                    
+                    Conditional Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../../annotating_code/type_syntax/intersection_types.html">
+            
+                <a href="../../annotating_code/type_syntax/intersection_types.html">
+            
+                    
+                    Intersection Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../../annotating_code/type_syntax/object_types.html">
+            
+                <a href="../../annotating_code/type_syntax/object_types.html">
+            
+                    
+                    Object Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="../../annotating_code/type_syntax/scalar_types.html">
+            
+                <a href="../../annotating_code/type_syntax/scalar_types.html">
+            
+                    
+                    Scalar Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="../../annotating_code/type_syntax/union_types.html">
+            
+                <a href="../../annotating_code/type_syntax/union_types.html">
+            
+                    
+                    Union Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="../../annotating_code/type_syntax/value_types.html">
+            
+                <a href="../../annotating_code/type_syntax/value_types.html">
+            
+                    
+                    Value Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../annotating_code/adding_assertions.html">
+            
+                <a href="../../annotating_code/adding_assertions.html">
+            
+                    
+                    Adding Assertions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../annotating_code/assertion_syntax.html">
+            
+                <a href="../../annotating_code/assertion_syntax.html">
+            
+                    
+                    Assertion Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../annotating_code/supported_annotations.html">
+            
+                <a href="../../annotating_code/supported_annotations.html">
+            
+                    
+                    Supported Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../annotating_code/templated_annotations.html">
+            
+                <a href="../../annotating_code/templated_annotations.html">
+            
+                    
+                    Templated Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../annotating_code/typing_in_psalm.html">
+            
+                <a href="../../annotating_code/typing_in_psalm.html">
+            
+                    
+                    Typing In Psalm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Contributing
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../contributing/how_psalm_works.html">
+            
+                <a href="../../contributing/how_psalm_works.html">
+            
+                    
+                    How Psalm Works
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../contributing/">
+            
+                <a href="../../contributing/">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../contributing/philosophy.html">
+            
+                <a href="../../contributing/philosophy.html">
+            
+                    
+                    Philosophy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../contributing/what_makes_psalm_complicated.html">
+            
+                <a href="../../contributing/what_makes_psalm_complicated.html">
+            
+                    
+                    What Makes Psalm Complicated
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Manipulating Code
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../manipulating_code/fixing.html">
+            
+                <a href="../../manipulating_code/fixing.html">
+            
+                    
+                    Fixing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../manipulating_code/refactoring.html">
+            
+                <a href="../../manipulating_code/refactoring.html">
+            
+                    
+                    Refactoring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Running Psalm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../issues.html">
+            
+                <a href="../issues.html">
+            
+                    
+                    Issues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    Plugins
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.2.1" data-path="authoring_plugins.html">
+            
+                <a href="authoring_plugins.html">
+            
+                    
+                    Authoring Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="plugins_type_system.html">
+            
+                <a href="plugins_type_system.html">
+            
+                    
+                    Plugins Type System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="using_plugins.html">
+            
+                <a href="using_plugins.html">
+            
+                    
+                    Using Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../checking_non_php_files.html">
+            
+                <a href="../checking_non_php_files.html">
+            
+                    
+                    Checking Non Php Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../command_line_usage.html">
+            
+                <a href="../command_line_usage.html">
+            
+                    
+                    Command Line Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../configuration.html">
+            
+                <a href="../configuration.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../dealing_with_code_issues.html">
+            
+                <a href="../dealing_with_code_issues.html">
+            
+                    
+                    Dealing With Code Issues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../error_levels.html">
+            
+                <a href="../error_levels.html">
+            
+                    
+                    Error Levels
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../installation.html">
+            
+                <a href="../installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../language_server.html">
+            
+                <a href="../language_server.html">
+            
+                    
+                    Language Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Security Analysis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../security_analysis/annotations.html">
+            
+                <a href="../../security_analysis/annotations.html">
+            
+                    
+                    Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../security_analysis/avoiding_false_negatives.html">
+            
+                <a href="../../security_analysis/avoiding_false_negatives.html">
+            
+                    
+                    Avoiding False Negatives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../security_analysis/avoiding_false_positives.html">
+            
+                <a href="../../security_analysis/avoiding_false_positives.html">
+            
+                    
+                    Avoiding False Positives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../security_analysis/custom_taint_sinks.html">
+            
+                <a href="../../security_analysis/custom_taint_sinks.html">
+            
+                    
+                    Custom Taint Sinks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../security_analysis/custom_taint_sources.html">
+            
+                <a href="../../security_analysis/custom_taint_sources.html">
+            
+                    
+                    Custom Taint Sources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../security_analysis/">
+            
+                <a href="../../security_analysis/">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Authoring Plugins</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="authoring-plugins">Authoring Plugins</h1>
+<h2 id="quick-start">Quick start</h2>
+<h3 id="using-a-template-repository">Using a template repository</h3>
+<p>Head over to <a href="https://github.com/weirdan/psalm-plugin-skeleton" target="_blank">plugin template repository</a> on Github and click <code>Use this template</code> button.</p>
+<h3 id="using-skeleton-project">Using skeleton project</h3>
+<p>Run <code>composer create-project weirdan/psalm-plugin-skeleton:dev-master your-plugin-name</code> to quickly bootstrap a new plugin project in <code>your-plugin-name</code> folder. Make sure you adjust namespaces in <code>composer.json</code>, <code>Plugin.php</code> and <code>tests</code> folder.</p>
+<h2 id="stub-files">Stub files</h2>
+<p>Stub files provide a way to override third-party type information when you cannot add Psalm&apos;s extended docblocks to the upstream source files directly.
+By convention, stub files have <code>.phpstub</code> extension to avoid IDEs treating them as actual php code.</p>
+<h2 id="generating-stubs">Generating stubs</h2>
+<p>Dev-require the library you want to tweak types for, e.g.</p>
+<pre class="language-"><code>composer require --dev cakephp/chronos
+</code></pre><p>Then generate the stubs</p>
+<pre class="language-"><code>vendor/bin/psalm --generate-stubs=stubs/chronos.phpstub
+</code></pre><p>Open the generated file and remove everything not related to the library you&apos;re stubbing. Tweak the docblocks to provide more accurate types.</p>
+<h2 id="registering-stub-files">Registering stub files</h2>
+<p>Skeleton/template project includes the code to register all <code>.phpstub</code> files from the <code>stubs</code> directory.</p>
+<p>To register a stub file manually use <code>Psalm\Plugin\RegistrationInterface::addStubFile()</code>.</p>
+<h2 id="publishing-your-plugin-on-packagist">Publishing your plugin on Packagist</h2>
+<p>Follow instructions on packagist.org under &apos;Publishing Packages&apos; section.</p>
+<h2 id="advanced-topics">Advanced topics</h2>
+<h3 id="starting-from-scratch">Starting from scratch</h3>
+<p>Composer-based plugin is a composer package which conforms to these requirements:</p>
+<ol>
+<li>Its <code>type</code> field is set to <code>psalm-plugin</code></li>
+<li>It has <code>extra.psalm.pluginClass</code> subkey in its <code>composer.json</code> that reference an entry-point class that will be invoked to register the plugin into Psalm runtime.</li>
+<li>Entry-point class implements <code>Psalm\Plugin\PluginEntryPointInterface</code></li>
+</ol>
+<h3 id="psalm-api">Psalm API</h3>
+<p>Plugins may implement one of (or more than one of) <code>Psalm\Plugin\Hook\*</code> interface(s).</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">class</span> <span class="token class-name">SomePlugin</span> <span class="token keyword">implements</span> <span class="token class-name"><span class="token punctuation">\</span>Psalm<span class="token punctuation">\</span>Plugin<span class="token punctuation">\</span>Hook<span class="token punctuation">\</span>AfterStatementAnalysisInterface</span>
+<span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><code>Psalm\Plugin\Hook\*</code> offers the following interfaces that you can implement:</p>
+<ul>
+<li><code>AfterAnalysisInterface</code> - called after Psalm has completed its analysis. Use this hook if you want to do something with the analysis results.</li>
+<li><code>AfterClassLikeAnalysisInterface</code> - called after Psalm has completed its analysis of a given class.</li>
+<li><code>AfterClassLikeExistenceCheckInterface</code> - called after Psalm analyzes a reference to a class, interface or trait.</li>
+<li><code>AfterClassLikeVisitInterface</code> - called after Psalm crawls the parsed Abstract Syntax Tree for a class-like (class, interface, trait). Due to caching the AST is crawled the first time Psalm sees the file, and is only re-crawled if the file changes, the cache is cleared, or you&apos;re disabling cache with <code>--no-cache</code>/<code>--no-reflection-cache</code>. Use this if you want to collect or modify information about a class before Psalm begins its analysis.</li>
+<li><code>AfterCodebasePopulatedInterface</code> - called after Psalm has scanned necessary files and populated codebase data.</li>
+<li><code>AfterEveryFunctionCallAnalysisInterface</code> - called after Psalm evaluates any function call. Cannot influence the call further.</li>
+<li><code>AfterExpressionAnalysisInterface</code> - called after Psalm evaluates an expression.</li>
+<li><code>AfterFileAnalysisInterface</code> - called after Psalm analyzes a file.</li>
+<li><code>AfterFunctionCallAnalysisInterface</code> - called after Psalm evaluates a function call to any function defined within the project itself. Can alter the return type or perform modifications of the call.</li>
+<li><code>AfterFunctionLikeAnalysisInterface</code> - called after Psalm has completed its analysis of a given function-like.</li>
+<li><code>AfterMethodCallAnalysisInterface</code> - called after Psalm analyzes a method call.</li>
+<li><code>AfterStatementAnalysisInterface</code> - called after Psalm evaluates an statement.</li>
+<li><code>BeforeFileAnalysisInterface</code> - called before Psalm analyzes a file.</li>
+<li><code>FunctionExistenceProviderInterface</code> - can be used to override Psalm&apos;s builtin function existence checks for one or more functions.</li>
+<li><code>FunctionParamsProviderInterface.php</code> - can be used to override Psalm&apos;s builtin function parameter lookup for one or more functions.</li>
+<li><code>FunctionReturnTypeProviderInterface</code> - can be used to override Psalm&apos;s builtin function return type lookup for one or more functions.</li>
+<li><code>MethodExistenceProviderInterface</code> - can be used to override Psalm&apos;s builtin method existence checks for one or more classes.</li>
+<li><code>MethodParamsProviderInterface</code> - can be used to override Psalm&apos;s builtin method parameter lookup for one or more classes.</li>
+<li><code>MethodReturnTypeProviderInterface</code> - can be used to override Psalm&apos;s builtin method return type lookup for one or more classes.</li>
+<li><code>MethodVisibilityProviderInterface</code> - can be used to override Psalm&apos;s builtin method visibility checks for one or more classes.</li>
+<li><code>PropertyExistenceProviderInterface</code> - can be used to override Psalm&apos;s builtin property existence checks for one or more classes.</li>
+<li><code>PropertyTypeProviderInterface</code> - can be used to override Psalm&apos;s builtin property type lookup for one or more classes.</li>
+<li><code>PropertyVisibilityProviderInterface</code> - can be used to override Psalm&apos;s builtin property visibility checks for one or more classes.</li>
+</ul>
+<p>Here are a couple of example plugins:</p>
+<ul>
+<li><a href="https://github.com/vimeo/psalm/blob/master/examples/plugins/StringChecker.php" target="_blank">StringChecker</a> - checks class references in strings</li>
+<li><a href="https://github.com/vimeo/psalm/blob/master/examples/plugins/PreventFloatAssignmentChecker.php" target="_blank">PreventFloatAssignmentChecker</a> - prevents assignment to floats</li>
+<li><a href="https://github.com/vimeo/psalm/blob/master/examples/plugins/FunctionCasingChecker.php" target="_blank">FunctionCasingChecker</a> - checks that your functions and methods are correctly-cased</li>
+</ul>
+<p>To ensure your plugin runs when Psalm does, add it to your <a href="../configuration.html">config</a> (not needed for composer-based plugins):</p>
+<pre class="language-"><code class="lang-xml">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugins</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugin</span> <span class="token attr-name">filename</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>src/plugins/SomePlugin.php<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>plugins</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>You can also specify an absolute path to your plugin:</p>
+<pre class="language-"><code class="lang-xml">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugins</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugin</span> <span class="token attr-name">filename</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>/path/to/SomePlugin.php<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>plugins</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h3 id="using-xdebug">Using Xdebug</h3>
+<p>As Psalm disables <em>Xdebug</em> at runtime, if you need to debug your code step-by-step when authoring a plugin, you can allow the extension by running Psalm as following:</p>
+<pre class="language-"><code class="lang-console">$ PSALM_ALLOW_XDEBUG=1 path/to/psalm
+</code></pre>
+<h2 id="type-system">Type system</h2>
+<p>Understand how Psalm handles types by <a href="plugins_type_system.html">reading this guide</a>.</p>
+<h2 id="handling-custom-plugin-issues">Handling custom plugin issues</h2>
+<p>Plugins may sometimes need to emit their own issues (i.e. not emit one of the <a href="../issues.html">existing issues</a>). If this is the case, they can emit an issue that extends <code>Psalm\Issue\PluginIssue</code>.</p>
+<p>To suppress a custom plugin issue in docblocks you can just use its issue name (e.g. <code>/** @psalm-suppress NoFloatAssignment */</code>, but to <a href="../dealing_with_code_issues.html#config-suppression">suppress it in Psalm&#x2019;s config</a> you must use the pattern:</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>PluginIssue</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>NoFloatAssignment<span class="token punctuation">&quot;</span></span> <span class="token attr-name">errorLevel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>suppress<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<p>You can also use more complex rules in the <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>issueHandler</span> <span class="token punctuation">/&gt;</span></span></code> element, as you can with any other issue type e.g.</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>PluginIssue</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>NoFloatAssignment<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>errorLevel</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>suppress<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>directory</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>tests<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>errorLevel</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>PluginIssue</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h2 id="upgrading-file-based-plugin-to-composer-based-version">Upgrading file-based plugin to composer-based version</h2>
+<p>Create new plugin project using skeleton, then pass the class name of you file-based plugin to <code>registerHooksFromClass()</code> method of the <code>Psalm\Plugin\RegistrationInterface</code> instance that was passed into your plugin entry point&apos;s <code>__invoke()</code> method. See the <a href="https://github.com/vimeo/psalm/tree/master/examples/plugins/composer-based/echo-checker/" target="_blank">conversion example</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="plugins_type_system.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Plugins Type System">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Authoring Plugins","level":"1.5.2.1","depth":3,"next":{"title":"Plugins Type System","level":"1.5.2.2","depth":3,"path":"running_psalm/plugins/plugins_type_system.md","ref":"running_psalm/plugins/plugins_type_system.md","articles":[]},"previous":{"title":"Plugins","level":"1.5.2","depth":2,"ref":"","articles":[{"title":"Authoring Plugins","level":"1.5.2.1","depth":3,"path":"running_psalm/plugins/authoring_plugins.md","ref":"running_psalm/plugins/authoring_plugins.md","articles":[]},{"title":"Plugins Type System","level":"1.5.2.2","depth":3,"path":"running_psalm/plugins/plugins_type_system.md","ref":"running_psalm/plugins/plugins_type_system.md","articles":[]},{"title":"Using Plugins","level":"1.5.2.3","depth":3,"path":"running_psalm/plugins/using_plugins.md","ref":"running_psalm/plugins/using_plugins.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"psalm 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"running_psalm/plugins/authoring_plugins.md","mtime":"2021-03-02T00:11:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-02T00:11:59.346Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

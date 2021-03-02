@@ -1,0 +1,860 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Refactoring · psalm 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="fixing.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Annotating Code
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    Type Syntax
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../annotating_code/type_syntax/array_types.html">
+            
+                <a href="../annotating_code/type_syntax/array_types.html">
+            
+                    
+                    Array Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../annotating_code/type_syntax/atomic_types.html">
+            
+                <a href="../annotating_code/type_syntax/atomic_types.html">
+            
+                    
+                    Atomic Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../annotating_code/type_syntax/callable_types.html">
+            
+                <a href="../annotating_code/type_syntax/callable_types.html">
+            
+                    
+                    Callable Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../annotating_code/type_syntax/conditional_types.html">
+            
+                <a href="../annotating_code/type_syntax/conditional_types.html">
+            
+                    
+                    Conditional Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../annotating_code/type_syntax/intersection_types.html">
+            
+                <a href="../annotating_code/type_syntax/intersection_types.html">
+            
+                    
+                    Intersection Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../annotating_code/type_syntax/object_types.html">
+            
+                <a href="../annotating_code/type_syntax/object_types.html">
+            
+                    
+                    Object Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="../annotating_code/type_syntax/scalar_types.html">
+            
+                <a href="../annotating_code/type_syntax/scalar_types.html">
+            
+                    
+                    Scalar Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="../annotating_code/type_syntax/union_types.html">
+            
+                <a href="../annotating_code/type_syntax/union_types.html">
+            
+                    
+                    Union Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="../annotating_code/type_syntax/value_types.html">
+            
+                <a href="../annotating_code/type_syntax/value_types.html">
+            
+                    
+                    Value Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../annotating_code/adding_assertions.html">
+            
+                <a href="../annotating_code/adding_assertions.html">
+            
+                    
+                    Adding Assertions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../annotating_code/assertion_syntax.html">
+            
+                <a href="../annotating_code/assertion_syntax.html">
+            
+                    
+                    Assertion Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../annotating_code/supported_annotations.html">
+            
+                <a href="../annotating_code/supported_annotations.html">
+            
+                    
+                    Supported Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../annotating_code/templated_annotations.html">
+            
+                <a href="../annotating_code/templated_annotations.html">
+            
+                    
+                    Templated Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../annotating_code/typing_in_psalm.html">
+            
+                <a href="../annotating_code/typing_in_psalm.html">
+            
+                    
+                    Typing In Psalm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Contributing
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../contributing/how_psalm_works.html">
+            
+                <a href="../contributing/how_psalm_works.html">
+            
+                    
+                    How Psalm Works
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../contributing/">
+            
+                <a href="../contributing/">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../contributing/philosophy.html">
+            
+                <a href="../contributing/philosophy.html">
+            
+                    
+                    Philosophy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../contributing/what_makes_psalm_complicated.html">
+            
+                <a href="../contributing/what_makes_psalm_complicated.html">
+            
+                    
+                    What Makes Psalm Complicated
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Manipulating Code
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="fixing.html">
+            
+                <a href="fixing.html">
+            
+                    
+                    Fixing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="refactoring.html">
+            
+                <a href="refactoring.html">
+            
+                    
+                    Refactoring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Running Psalm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../running_psalm/issues.html">
+            
+                <a href="../running_psalm/issues.html">
+            
+                    
+                    Issues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    Plugins
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../running_psalm/plugins/authoring_plugins.html">
+            
+                <a href="../running_psalm/plugins/authoring_plugins.html">
+            
+                    
+                    Authoring Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../running_psalm/plugins/plugins_type_system.html">
+            
+                <a href="../running_psalm/plugins/plugins_type_system.html">
+            
+                    
+                    Plugins Type System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../running_psalm/plugins/using_plugins.html">
+            
+                <a href="../running_psalm/plugins/using_plugins.html">
+            
+                    
+                    Using Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../running_psalm/checking_non_php_files.html">
+            
+                <a href="../running_psalm/checking_non_php_files.html">
+            
+                    
+                    Checking Non Php Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../running_psalm/command_line_usage.html">
+            
+                <a href="../running_psalm/command_line_usage.html">
+            
+                    
+                    Command Line Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../running_psalm/configuration.html">
+            
+                <a href="../running_psalm/configuration.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../running_psalm/dealing_with_code_issues.html">
+            
+                <a href="../running_psalm/dealing_with_code_issues.html">
+            
+                    
+                    Dealing With Code Issues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../running_psalm/error_levels.html">
+            
+                <a href="../running_psalm/error_levels.html">
+            
+                    
+                    Error Levels
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../running_psalm/installation.html">
+            
+                <a href="../running_psalm/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../running_psalm/language_server.html">
+            
+                <a href="../running_psalm/language_server.html">
+            
+                    
+                    Language Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Security Analysis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../security_analysis/annotations.html">
+            
+                <a href="../security_analysis/annotations.html">
+            
+                    
+                    Annotations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../security_analysis/avoiding_false_negatives.html">
+            
+                <a href="../security_analysis/avoiding_false_negatives.html">
+            
+                    
+                    Avoiding False Negatives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../security_analysis/avoiding_false_positives.html">
+            
+                <a href="../security_analysis/avoiding_false_positives.html">
+            
+                    
+                    Avoiding False Positives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../security_analysis/custom_taint_sinks.html">
+            
+                <a href="../security_analysis/custom_taint_sinks.html">
+            
+                    
+                    Custom Taint Sinks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../security_analysis/custom_taint_sources.html">
+            
+                <a href="../security_analysis/custom_taint_sources.html">
+            
+                    
+                    Custom Taint Sources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../security_analysis/">
+            
+                <a href="../security_analysis/">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Refactoring</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="refactoring-code">Refactoring Code</h1>
+<p>Sometimes you want to make big changes to your codebase like moving methods or classes.</p>
+<p>Psalm has a refactoring tool you can access with either <code>vendor/bin/psalm-refactor</code> or <code>vendor/bin/psalm --refactor</code>, followed by appropriate commands.</p>
+<h2 id="moving-all-classes-from-one-namespace-to-another">Moving all classes from one namespace to another</h2>
+<pre class="language-"><code>vendor/bin/psalm-refactor --move &quot;Ns1\*&quot; --into &quot;Some\Other\Namespace&quot;
+</code></pre><p>This moves all classes in <code>Ns1</code> (e.g. <code>Ns1\Foo</code>, <code>Ns1\Baz</code>) into the specified namespace. Files are moved as necessary.</p>
+<h2 id="moving-classes-between-namespaces">Moving classes between namespaces</h2>
+<pre class="language-"><code>vendor/bin/psalm-refactor --move &quot;Ns1\Foo&quot; --into &quot;Ns2&quot;
+</code></pre><p>This tells Psalm to move class <code>Ns1\Foo</code> into the namespace <code>Ns2</code>, so any reference to <code>Ns1\Foo</code> becomes <code>Ns2\Foo</code>). Files are moved as necessary.</p>
+<h2 id="moving-and-renaming-classes">Moving and renaming classes</h2>
+<pre class="language-"><code>vendor/bin/psalm-refactor --rename &quot;Ns1\Foo&quot; --to &quot;Ns2\Bar\Baz&quot;
+</code></pre><p>This tells Psalm to move class <code>Ns1\Foo</code> into the namespace <code>Ns2\Bar</code> and rename it to <code>Baz</code>, so any reference to <code>Ns1\Foo</code> becomes <code>Ns2\Bar\Baz</code>). Files are moved as necessary.</p>
+<h2 id="moving-methods-between-classes">Moving methods between classes</h2>
+<pre class="language-"><code>vendor/bin/psalm-refactor --move &quot;Ns1\Foo::bar&quot; --into &quot;Ns2\Baz&quot;
+</code></pre><p>This tells Psalm to move a method named <code>bar</code> inside <code>Ns1\Foo</code> into the class <code>Ns2\Baz</code>, so any reference to <code>Ns1\Foo::bar</code> becomes <code>Ns2\Baz::bar</code>). Psalm currently allows you to move static methods between aribitrary classes, and instance methods into child classes of that instance.</p>
+<h2 id="moving-and-renaming-methods">Moving and renaming methods</h2>
+<pre class="language-"><code>vendor/bin/psalm-refactor --rename &quot;Ns1\Foo::bar&quot; --to &quot;Ns2\Baz::bat&quot;
+</code></pre><p>This tells Psalm to move method <code>Ns1\Foo::bar</code> into the class <code>Ns2\Baz</code> and rename it to <code>bat</code>, so any reference to <code>Ns1\Foo::bar</code> becomes <code>Ns2\Baz::bat</code>).</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="fixing.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Fixing">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Refactoring","level":"1.4.2","depth":2,"next":{"title":"Running Psalm","level":"1.5","depth":1,"ref":"","articles":[{"title":"Issues","level":"1.5.1","depth":2,"path":"running_psalm/issues.md","ref":"running_psalm/issues.md","articles":[]},{"title":"Plugins","level":"1.5.2","depth":2,"ref":"","articles":[{"title":"Authoring Plugins","level":"1.5.2.1","depth":3,"path":"running_psalm/plugins/authoring_plugins.md","ref":"running_psalm/plugins/authoring_plugins.md","articles":[]},{"title":"Plugins Type System","level":"1.5.2.2","depth":3,"path":"running_psalm/plugins/plugins_type_system.md","ref":"running_psalm/plugins/plugins_type_system.md","articles":[]},{"title":"Using Plugins","level":"1.5.2.3","depth":3,"path":"running_psalm/plugins/using_plugins.md","ref":"running_psalm/plugins/using_plugins.md","articles":[]}]},{"title":"Checking Non Php Files","level":"1.5.3","depth":2,"path":"running_psalm/checking_non_php_files.md","ref":"running_psalm/checking_non_php_files.md","articles":[]},{"title":"Command Line Usage","level":"1.5.4","depth":2,"path":"running_psalm/command_line_usage.md","ref":"running_psalm/command_line_usage.md","articles":[]},{"title":"Configuration","level":"1.5.5","depth":2,"path":"running_psalm/configuration.md","ref":"running_psalm/configuration.md","articles":[]},{"title":"Dealing With Code Issues","level":"1.5.6","depth":2,"path":"running_psalm/dealing_with_code_issues.md","ref":"running_psalm/dealing_with_code_issues.md","articles":[]},{"title":"Error Levels","level":"1.5.7","depth":2,"path":"running_psalm/error_levels.md","ref":"running_psalm/error_levels.md","articles":[]},{"title":"Installation","level":"1.5.8","depth":2,"path":"running_psalm/installation.md","ref":"running_psalm/installation.md","articles":[]},{"title":"Language Server","level":"1.5.9","depth":2,"path":"running_psalm/language_server.md","ref":"running_psalm/language_server.md","articles":[]}]},"previous":{"title":"Fixing","level":"1.4.1","depth":2,"path":"manipulating_code/fixing.md","ref":"manipulating_code/fixing.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"psalm 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"manipulating_code/refactoring.md","mtime":"2021-03-02T00:11:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-02T00:11:59.346Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
